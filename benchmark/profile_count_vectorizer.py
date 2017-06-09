@@ -16,7 +16,7 @@ text = fetch_20newsgroups(subset='all').data
 cp = cProfile.Profile()
 cp.enable()
 
-vect = TfidfVectorizer(ngram_range=(1, 1))
+vect = TfidfVectorizer(ngram_range=(1, 2))
 vect.fit_transform(text)
 
 s = io.StringIO()
