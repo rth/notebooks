@@ -60,4 +60,23 @@ CountVectorizer|HashingVectorizer|TfidfVectorizer
 
 
 
-## A. Performance benchmarks
+## B. Handling arrays > 32bit
+
+Tested with [./run_vectorizers_32bit.py](./run_vectorizers_32bit.py)
+
+### On master
+
+1. Case len(X.data) < 2**31 - 1
+
+```py
+python run_vectorizers_32bit.py TfidfVectorizer 1000
+Vectorizer: TfidfVectorizer
+n_samples = 1000
+
+# Resulting array (X):
+ * indptr len=3 dtype=int32
+ * indices len=131074 dtype=int32
+ * data len=131074 dtype=float64
+```
+
+
