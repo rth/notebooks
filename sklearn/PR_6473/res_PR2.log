@@ -1,0 +1,71 @@
++ python run_vectorizers_32bit.py CountVectorizer 100
+Vectorizer: CountVectorizer
+n_samples = 100
+
+# Resulting array (X):
+ * indptr len=101 dtype=int32
+ * indices len=6553700 dtype=int32
+ * data len=6553700 dtype=int64
+
+real	0m6.981s
+user	0m6.688s
+sys	0m0.292s
++ python run_vectorizers_32bit.py TfidfVectorizer 100
+Vectorizer: TfidfVectorizer
+n_samples = 100
+
+# Resulting array (X):
+ * indptr len=101 dtype=int32
+ * indices len=6553700 dtype=int32
+ * data len=6553700 dtype=float64
+
+real	0m7.043s
+user	0m6.692s
+sys	0m0.348s
++ python run_vectorizers_32bit.py HashingVectorizer 100
+Vectorizer: HashingVectorizer
+n_samples = 100
+
+# Resulting array (X):
+ * indptr len=101 dtype=int32
+ * indices len=6352800 dtype=int32
+ * data len=6352800 dtype=float64
+
+real	0m6.464s
+user	0m6.388s
+sys	0m0.076s
++ python run_vectorizers_32bit.py CountVectorizer 65537
+Vectorizer: CountVectorizer
+n_samples = 65537
+
+# Resulting array (X):
+ * indptr len=65538 dtype=int64
+ * indices len=4295098369 dtype=int64
+ * data len=4295098369 dtype=int64
+
+real	69m9.640s
+user	64m24.184s
+sys	4m42.740s
++ python run_vectorizers_32bit.py TfidfVectorizer 65537
+run.sh: line 6: 19089 Killed                  python run_vectorizers_32bit.py TfidfVectorizer 65537
+
+real	71m39.068s
+user	65m26.152s
+sys	6m10.772s
++ python run_vectorizers_32bit.py HashingVectorizer 67537
+Vectorizer: HashingVectorizer
+n_samples = 67537
+Traceback (most recent call last):
+  File "run_vectorizers_32bit.py", line 24, in <module>
+    X = vect.fit_transform(doc())
+  File "/home/ubuntu/scikit-learn/sklearn/feature_extraction/text.py", line 499, in transform
+    X = normalize(X, norm=self.norm, copy=False)
+  File "/home/ubuntu/scikit-learn/sklearn/preprocessing/data.py", line 1351, in normalize
+    inplace_csr_row_normalize_l2(X)
+  File "sklearn/utils/sparsefuncs_fast.pyx", line 359, in sklearn.utils.sparsefuncs_fast.inplace_csr_row_normalize_l2 (sklearn/utils/sparsefuncs_fast.c:12648)
+  File "sklearn/utils/sparsefuncs_fast.pyx", line 362, in sklearn.utils.sparsefuncs_fast._inplace_csr_row_normalize_l2 (sklearn/utils/sparsefuncs_fast.c:13750)
+ValueError: Buffer dtype mismatch, expected 'int' but got 'long'
+
+real	67m59.253s
+user	66m19.476s
+sys	1m38.756s

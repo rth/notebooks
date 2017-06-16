@@ -1,0 +1,109 @@
+         284307 function calls (284302 primitive calls) in 5.486 seconds
+
+   Ordered by: internal time
+   List reduced from 238 to 100 due to restriction <100>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+    18846    2.365    0.000    2.365    0.000 {method 'findall' of '_sre.SRE_Pattern' objects}
+        1    1.482    1.482    4.603    4.603 /home/rth/src/scikit-learn/sklearn/feature_extraction/text.py:745(_count_vocab)
+        1    0.281    0.281    0.281    0.281 {built-in method builtins.sorted}
+    18846    0.267    0.000    0.267    0.000 {method 'extend' of 'array.array' objects}
+      155    0.222    0.001    0.222    0.001 {built-in method numpy.core.multiarray.array}
+        2    0.199    0.100    0.199    0.100 {built-in method scipy.sparse._sparsetools.csr_matmat_pass2}
+        2    0.111    0.056    0.111    0.056 {built-in method scipy.sparse._sparsetools.csr_matmat_pass1}
+        1    0.109    0.109    0.109    0.109 {built-in method scipy.sparse._sparsetools.csr_sort_indices}
+        1    0.104    0.104    0.282    0.282 /home/rth/src/scikit-learn/sklearn/feature_extraction/text.py:704(_limit_features)
+        1    0.080    0.080    0.372    0.372 /home/rth/src/scikit-learn/sklearn/feature_extraction/text.py:690(_sort_features)
+    18846    0.045    0.000    0.045    0.000 {method 'extend' of 'list' objects}
+    18846    0.031    0.000    2.478    0.000 /home/rth/src/scikit-learn/sklearn/feature_extraction/text.py:240(<lambda>)
+    18846    0.031    0.000    0.031    0.000 {method 'lower' of 'str' objects}
+        2    0.025    0.013    0.025    0.013 {built-in method numpy.core.multiarray.bincount}
+        1    0.020    0.020    5.278    5.278 /home/rth/src/scikit-learn/sklearn/feature_extraction/text.py:809(fit_transform)
+    18846    0.016    0.000    0.023    0.000 /home/rth/src/scikit-learn/sklearn/feature_extraction/text.py:105(decode)
+        1    0.014    0.014    0.014    0.014 {sklearn.utils.sparsefuncs_fast.inplace_csr_row_normalize_l2}
+        1    0.011    0.011    0.011    0.011 {method 'take' of 'numpy.ndarray' objects}
+    18846    0.010    0.000    0.043    0.000 /home/rth/src/scikit-learn/sklearn/feature_extraction/text.py:207(<lambda>)
+    18846    0.010    0.000    0.010    0.000 /home/rth/src/scikit-learn/sklearn/feature_extraction/text.py:126(_word_ngrams)
+        1    0.008    0.008    0.008    0.008 {built-in method scipy.sparse._sparsetools.csc_matvec}
+    18972    0.008    0.000    0.008    0.000 {built-in method builtins.isinstance}
+    18846    0.007    0.000    2.372    0.000 /home/rth/src/scikit-learn/sklearn/feature_extraction/text.py:216(<lambda>)
+        1    0.004    0.004    0.021    0.021 /home/rth/src/scikit-learn/sklearn/feature_extraction/text.py:1017(fit)
+    18846    0.004    0.000    0.004    0.000 {method 'keys' of 'dict' objects}
+19038/19037    0.004    0.000    0.004    0.000 {built-in method builtins.len}
+    18847    0.003    0.000    0.003    0.000 {method 'append' of 'array.array' objects}
+       10    0.003    0.000    0.003    0.000 {method 'reduce' of 'numpy.ufunc' objects}
+    18846    0.002    0.000    0.002    0.000 {method 'values' of 'dict' objects}
+    18846    0.002    0.000    0.002    0.000 /home/rth/src/scikit-learn/sklearn/feature_extraction/text.py:191(<lambda>)
+        1    0.001    0.001    0.003    0.003 /home/rth/miniconda3/envs/sklearn-env/lib/python3.6/site-packages/scipy/sparse/dia.py:345(tocoo)
+        1    0.001    0.001    0.001    0.001 {built-in method scipy.sparse._sparsetools.csc_tocsr}
+        1    0.001    0.001    0.001    0.001 {built-in method scipy.sparse._sparsetools.coo_tocsr}
+        1    0.001    0.001    0.001    0.001 {method 'cumsum' of 'numpy.ndarray' objects}
+       11    0.000    0.000    0.001    0.000 /home/rth/miniconda3/envs/sklearn-env/lib/python3.6/site-packages/scipy/sparse/compressed.py:128(check_format)
+        2    0.000    0.000    0.000    0.000 {built-in method numpy.core.multiarray.arange}
+       29    0.000    0.000    0.001    0.000 /home/rth/miniconda3/envs/sklearn-env/lib/python3.6/site-packages/scipy/sparse/sputils.py:119(get_index_dtype)
+       31    0.000    0.000    0.000    0.000 /home/rth/miniconda3/envs/sklearn-env/lib/python3.6/site-packages/numpy/core/getlimits.py:507(__init__)
+        6    0.000    0.000    0.000    0.000 {method 'astype' of 'numpy.ndarray' objects}
+        3    0.000    0.000    0.000    0.000 {built-in method numpy.core.multiarray.copyto}
+        1    0.000    0.000    0.000    0.000 {built-in method numpy.core.multiarray.where}
+    11/10    0.000    0.000    0.011    0.001 /home/rth/miniconda3/envs/sklearn-env/lib/python3.6/site-packages/scipy/sparse/compressed.py:25(__init__)
+        2    0.000    0.000    0.321    0.160 /home/rth/miniconda3/envs/sklearn-env/lib/python3.6/site-packages/scipy/sparse/compressed.py:515(_mul_sparse_matrix)
+        1    0.000    0.000    0.000    0.000 {built-in method numpy.core.multiarray.zeros}
+       11    0.000    0.000    0.000    0.000 /home/rth/miniconda3/envs/sklearn-env/lib/python3.6/site-packages/scipy/sparse/compressed.py:1065(prune)
+       14    0.000    0.000    0.000    0.000 {built-in method numpy.core.multiarray.empty}
+       10    0.000    0.000    0.000    0.000 /home/rth/miniconda3/envs/sklearn-env/lib/python3.6/site-packages/scipy/sparse/sputils.py:200(isshape)
+      119    0.000    0.000    0.217    0.002 /home/rth/miniconda3/envs/sklearn-env/lib/python3.6/site-packages/numpy/core/numeric.py:463(asarray)
+       13    0.000    0.000    0.000    0.000 /home/rth/miniconda3/envs/sklearn-env/lib/python3.6/site-packages/scipy/sparse/base.py:77(set_shape)
+        3    0.000    0.000    0.329    0.110 /home/rth/miniconda3/envs/sklearn-env/lib/python3.6/site-packages/scipy/sparse/base.py:342(__mul__)
+       47    0.000    0.000    0.000    0.000 /home/rth/miniconda3/envs/sklearn-env/lib/python3.6/site-packages/scipy/sparse/compressed.py:100(getnnz)
+        1    0.000    0.000    0.001    0.001 /home/rth/miniconda3/envs/sklearn-env/lib/python3.6/site-packages/scipy/sparse/coo.py:212(_check)
+       19    0.000    0.000    0.000    0.000 {built-in method builtins.hasattr}
+        6    0.000    0.000    0.000    0.000 /home/rth/miniconda3/envs/sklearn-env/lib/python3.6/site-packages/numpy/core/numerictypes.py:942(_can_coerce_all)
+       13    0.000    0.000    0.000    0.000 /home/rth/miniconda3/envs/sklearn-env/lib/python3.6/site-packages/scipy/sparse/base.py:70(__init__)
+       30    0.000    0.000    0.000    0.000 /home/rth/miniconda3/envs/sklearn-env/lib/python3.6/site-packages/numpy/core/getlimits.py:532(max)
+        1    0.000    0.000    0.188    0.188 /home/rth/src/scikit-learn/sklearn/feature_extraction/text.py:1043(transform)
+        1    0.000    0.000    0.001    0.001 /home/rth/miniconda3/envs/sklearn-env/lib/python3.6/site-packages/scipy/sparse/csc.py:139(tocsr)
+        5    0.000    0.000    0.000    0.000 /home/rth/miniconda3/envs/sklearn-env/lib/python3.6/site-packages/scipy/sparse/sputils.py:20(upcast)
+        1    0.000    0.000    0.000    0.000 /home/rth/miniconda3/envs/sklearn-env/lib/python3.6/site-packages/scipy/sparse/dia.py:78(__init__)
+        1    0.000    0.000    0.002    0.002 /home/rth/src/scikit-learn/sklearn/utils/validation.py:49(_assert_all_finite)
+        1    0.000    0.000    0.009    0.009 /home/rth/miniconda3/envs/sklearn-env/lib/python3.6/site-packages/scipy/sparse/base.py:825(sum)
+       51    0.000    0.000    0.000    0.000 /home/rth/miniconda3/envs/sklearn-env/lib/python3.6/site-packages/scipy/sparse/base.py:193(nnz)
+        1    0.000    0.000    0.000    0.000 /home/rth/miniconda3/envs/sklearn-env/lib/python3.6/site-packages/numpy/matrixlib/defmatrix.py:391(sum)
+        1    0.000    0.000    0.000    0.000 /home/rth/miniconda3/envs/sklearn-env/lib/python3.6/sre_parse.py:469(_parse)
+       22    0.000    0.000    0.000    0.000 /home/rth/miniconda3/envs/sklearn-env/lib/python3.6/site-packages/scipy/_lib/_util.py:128(_prune_array)
+        1    0.000    0.000    0.155    0.155 /home/rth/miniconda3/envs/sklearn-env/lib/python3.6/site-packages/scipy/sparse/csr.py:236(__getitem__)
+       12    0.000    0.000    0.000    0.000 /home/rth/miniconda3/envs/sklearn-env/lib/python3.6/site-packages/scipy/sparse/sputils.py:91(to_native)
+        1    0.000    0.000    0.000    0.000 /home/rth/miniconda3/envs/sklearn-env/lib/python3.6/site-packages/scipy/sparse/csr.py:250(check_bounds)
+       13    0.000    0.000    0.000    0.000 /home/rth/miniconda3/envs/sklearn-env/lib/python3.6/site-packages/scipy/sparse/data.py:22(__init__)
+      7/6    0.000    0.000    0.000    0.000 /home/rth/miniconda3/envs/sklearn-env/lib/python3.6/site-packages/numpy/matrixlib/defmatrix.py:258(__array_finalize__)
+       12    0.000    0.000    0.000    0.000 {method 'newbyteorder' of 'numpy.dtype' objects}
+        1    0.000    0.000    0.000    0.000 /home/rth/miniconda3/envs/sklearn-env/lib/python3.6/abc.py:194(__subclasscheck__)
+        9    0.000    0.000    0.000    0.000 /home/rth/miniconda3/envs/sklearn-env/lib/python3.6/site-packages/numpy/core/numeric.py:2135(isscalar)
+        1    0.000    0.000    0.002    0.002 /home/rth/src/scikit-learn/sklearn/utils/validation.py:272(check_array)
+        1    0.000    0.000    0.001    0.001 /home/rth/miniconda3/envs/sklearn-env/lib/python3.6/site-packages/scipy/sparse/coo.py:301(tocsr)
+        1    0.000    0.000    0.000    0.000 /home/rth/miniconda3/envs/sklearn-env/lib/python3.6/site-packages/numpy/lib/arraysetops.py:250(_unique1d)
+        1    0.000    0.000    0.001    0.001 /home/rth/miniconda3/envs/sklearn-env/lib/python3.6/site-packages/scipy/sparse/csr.py:264(extractor)
+       66    0.000    0.000    0.000    0.000 /home/rth/miniconda3/envs/sklearn-env/lib/python3.6/site-packages/scipy/sparse/base.py:100(get_shape)
+      2/1    0.000    0.000    0.000    0.000 /home/rth/miniconda3/envs/sklearn-env/lib/python3.6/sre_compile.py:64(_compile)
+        2    0.000    0.000    0.000    0.000 /home/rth/miniconda3/envs/sklearn-env/lib/python3.6/site-packages/scipy/sparse/csr.py:131(transpose)
+        1    0.000    0.000    0.000    0.000 /home/rth/miniconda3/envs/sklearn-env/lib/python3.6/site-packages/numpy/lib/shape_base.py:826(tile)
+        1    0.000    0.000    0.000    0.000 /home/rth/miniconda3/envs/sklearn-env/lib/python3.6/re.py:286(_compile)
+        7    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:402(parent)
+       12    0.000    0.000    0.000    0.000 {built-in method builtins.getattr}
+        4    0.000    0.000    0.000    0.000 /home/rth/miniconda3/envs/sklearn-env/lib/python3.6/site-packages/scipy/sparse/base.py:562(__getattr__)
+        8    0.000    0.000    0.000    0.000 /home/rth/miniconda3/envs/sklearn-env/lib/python3.6/site-packages/scipy/sparse/sputils.py:183(isscalarlike)
+        1    0.000    0.000    0.001    0.001 /home/rth/miniconda3/envs/sklearn-env/lib/python3.6/site-packages/scipy/sparse/coo.py:118(__init__)
+        1    0.000    0.000    0.000    0.000 /home/rth/miniconda3/envs/sklearn-env/lib/python3.6/site-packages/scipy/sparse/sputils.py:265(_unpack_index)
+        4    0.000    0.000    0.000    0.000 /home/rth/miniconda3/envs/sklearn-env/lib/python3.6/site-packages/numpy/core/numerictypes.py:728(issubdtype)
+        1    0.000    0.000    5.486    5.486 /home/rth/src/scikit-learn/sklearn/feature_extraction/text.py:1336(fit_transform)
+        1    0.000    0.000    0.016    0.016 /home/rth/src/scikit-learn/sklearn/preprocessing/data.py:1300(normalize)
+        3    0.000    0.000    0.000    0.000 /home/rth/miniconda3/envs/sklearn-env/lib/python3.6/site-packages/numpy/core/numerictypes.py:964(find_common_type)
+       10    0.000    0.000    0.000    0.000 /home/rth/miniconda3/envs/sklearn-env/lib/python3.6/sre_parse.py:232(__next)
+        1    0.000    0.000    0.000    0.000 /home/rth/src/scikit-learn/sklearn/feature_extraction/text.py:657(__init__)
+        2    0.000    0.000    0.000    0.000 /home/rth/src/scikit-learn/sklearn/externals/six.py:437(iteritems)
+        1    0.000    0.000    0.008    0.008 /home/rth/miniconda3/envs/sklearn-env/lib/python3.6/site-packages/scipy/sparse/base.py:430(__rmul__)
+        2    0.000    0.000    0.000    0.000 {built-in method numpy.core.multiarray.frombuffer}
+       28    0.000    0.000    0.000    0.000 {built-in method numpy.core.multiarray.can_cast}
+       13    0.000    0.000    0.000    0.000 {built-in method builtins.max}
+
+
+
