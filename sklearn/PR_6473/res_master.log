@@ -1,0 +1,87 @@
++ python run_vectorizers_32bit.py CountVectorizer 100
+Vectorizer: CountVectorizer
+n_samples = 100
+
+# Resulting array (X):
+ * indptr len=101 dtype=int32
+ * indices len=6553700 dtype=int32
+ * data len=6553700 dtype=int64
+
+real	0m7.295s
+user	0m6.865s
+sys	0m0.428s
++ python run_vectorizers_32bit.py TfidfVectorizer 100
+Vectorizer: TfidfVectorizer
+n_samples = 100
+
+# Resulting array (X):
+ * indptr len=101 dtype=int32
+ * indices len=6553700 dtype=int32
+ * data len=6553700 dtype=float64
+
+real	0m7.554s
+user	0m7.034s
+sys	0m0.516s
++ python run_vectorizers_32bit.py HashingVectorizer 100
+Vectorizer: HashingVectorizer
+n_samples = 100
+
+# Resulting array (X):
+ * indptr len=101 dtype=int32
+ * indices len=6352800 dtype=int32
+ * data len=6352800 dtype=float64
+
+real	0m6.498s
+user	0m6.367s
+sys	0m0.128s
++ python run_vectorizers_32bit.py CountVectorizer 65537
+Vectorizer: CountVectorizer
+n_samples = 65537
+Traceback (most recent call last):
+  File "run_vectorizers_32bit.py", line 24, in <module>
+    X = vect.fit_transform(doc())
+  File "/home/ubuntu/scikit-learn/sklearn/feature_extraction/text.py", line 847, in fit_transform
+    self.fixed_vocabulary_)
+  File "/home/ubuntu/scikit-learn/sklearn/feature_extraction/text.py", line 783, in _count_vocab
+    indptr.append(len(j_indices))
+OverflowError: signed integer is greater than maximum
+
+real	34m25.607s
+user	31m59.944s
+sys	2m24.860s
++ python run_vectorizers_32bit.py TfidfVectorizer 65537
+Vectorizer: TfidfVectorizer
+n_samples = 65537
+Traceback (most recent call last):
+  File "run_vectorizers_32bit.py", line 24, in <module>
+    X = vect.fit_transform(doc())
+  File "/home/ubuntu/scikit-learn/sklearn/feature_extraction/text.py", line 1359, in fit_transform
+    X = super(TfidfVectorizer, self).fit_transform(raw_documents)
+  File "/home/ubuntu/scikit-learn/sklearn/feature_extraction/text.py", line 847, in fit_transform
+    self.fixed_vocabulary_)
+  File "/home/ubuntu/scikit-learn/sklearn/feature_extraction/text.py", line 783, in _count_vocab
+    indptr.append(len(j_indices))
+OverflowError: signed integer is greater than maximum
+
+real	33m41.735s
+user	31m20.038s
+sys	2m20.840s
++ python run_vectorizers_32bit.py HashingVectorizer 67537
+Vectorizer: HashingVectorizer
+n_samples = 67537
+Traceback (most recent call last):
+  File "run_vectorizers_32bit.py", line 24, in <module>
+    X = vect.fit_transform(doc())
+  File "/home/ubuntu/scikit-learn/sklearn/feature_extraction/text.py", line 494, in transform
+    X = self._get_hasher().transform(analyzer(doc) for doc in X)
+  File "/home/ubuntu/scikit-learn/sklearn/feature_extraction/hashing.py", line 162, in transform
+    shape=(n_samples, self.n_features))
+  File "/home/ubuntu/miniconda3/envs/sklearn-env/lib/python3.6/site-packages/scipy/sparse/compressed.py", line 98, in __init__
+    self.check_format(full_check=False)
+  File "/home/ubuntu/miniconda3/envs/sklearn-env/lib/python3.6/site-packages/scipy/sparse/compressed.py", line 167, in check_format
+    raise ValueError("indices and data should have the same size")
+ValueError: indices and data should have the same size
+
+real	59m19.524s
+user	59m6.736s
+sys	0m12.620s

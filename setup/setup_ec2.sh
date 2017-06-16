@@ -8,6 +8,6 @@ sudo apt-get install -y gcc g++ screen vim wget
 #echo 'export PATH=/home/travis/miniconda2/bin:$PATH' > ~/.bashrc
 #source ~/.bashrc
 
-wget https://raw.githubusercontent.com/rth/notebooks/master/notebooks/setup/.screenrc -O ~/.screenrc
+wget https://raw.githubusercontent.com/rth/notebooks/master/setup/.screenrc -O ~/.screenrc
 
 

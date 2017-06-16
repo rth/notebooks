@@ -45,7 +45,7 @@ for Vectorizer, (analyzer, ngram_range) in tqdm(itertools.product(
     dt = timeit.repeat(run_vectorizer(Vectorizer, text, **params),
                        number=1,
                        repeat=3)
-    bench['time'] = "{:.1f}".format(np.mean(dt))
+    bench['time'] = "{:.2f}(±{:.2f})".format(np.mean(dt), np.std(dt))
 
     res.append(bench)
 
