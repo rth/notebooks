@@ -3,7 +3,8 @@ import sys
 
 import numpy as np
 
-from sklearn.feature_extraction.text import TfidfVectorizer, HashingVectorizer
+from sklearn.feature_extraction.text import (TfidfVectorizer, HashingVectorizer,
+                                             CountVectorizer)
 
 
 Vectorizer = eval(sys.argv[1])
