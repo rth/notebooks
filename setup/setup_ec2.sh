@@ -1,6 +1,6 @@
 # Setup a miniconda environement on a new EC2 box
 
-sudo apt-get install -y gcc g++ screen vim wget htop git
+sudo apt-get install -y gcc g++ screen vim wget htop git make
 
 wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh
 chmod +x miniconda.sh
