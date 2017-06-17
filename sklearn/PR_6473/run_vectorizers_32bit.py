@@ -7,7 +7,8 @@ from sklearn.feature_extraction.text import (TfidfVectorizer, HashingVectorizer,
                                              CountVectorizer)
 
 
-Vectorizer = eval(sys.argv[1])
+vectorizer_name = sys.argv[1]
+Vectorizer = eval(vectorizer_name)
 n_samples = int(sys.argv[2])
 
 vocabulary = ' '.join('{}'.format(el) for el in np.arange(10, 2**16 + 1 + 10))
@@ -16,9 +17,15 @@ def doc():
     for idx in range(n_samples):
         yield vocabulary
 
-vect = Vectorizer()
+if vectorizer_name == 'CountVectorizer':
+    pars = {}
+else:
+    pars = {'norm': None}  # L2 normalization for CSR arrays with 64 bit currently fails
+                           # in scikit-learn scipy routines
+vect = Vectorizer(**pars)
 
 print('Vectorizer:', type(vect).__name__)
+print('  pars: ', pars)
 print('n_samples =', n_samples)
 
 X = vect.fit_transform(doc())
