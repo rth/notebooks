@@ -1,5 +1,6 @@
 + python run_vectorizers_32bit.py CountVectorizer 100
 Vectorizer: CountVectorizer
+  pars:  {}
 n_samples = 100
 
 # Resulting array (X):
@@ -7,11 +8,12 @@ n_samples = 100
  * indices len=6553700 dtype=int32
  * data len=6553700 dtype=int64
 
-real	0m6.936s
-user	0m6.587s
-sys	0m0.344s
+real	0m6.922s
+user	0m6.575s
+sys	0m0.340s
 + python run_vectorizers_32bit.py TfidfVectorizer 100
 Vectorizer: TfidfVectorizer
+  pars:  {'norm': None}
 n_samples = 100
 
 # Resulting array (X):
@@ -19,11 +21,12 @@ n_samples = 100
  * indices len=6553700 dtype=int32
  * data len=6553700 dtype=float64
 
-real	0m7.042s
-user	0m6.699s
-sys	0m0.336s
+real	0m7.028s
+user	0m6.665s
+sys	0m0.352s
 + python run_vectorizers_32bit.py HashingVectorizer 100
 Vectorizer: HashingVectorizer
+  pars:  {'norm': None}
 n_samples = 100
 
 # Resulting array (X):
@@ -31,43 +34,45 @@ n_samples = 100
  * indices len=6352800 dtype=int32
  * data len=6352800 dtype=float64
 
-real	0m6.339s
-user	0m6.246s
-sys	0m0.092s
-+ python run_vectorizers_32bit.py CountVectorizer 65537
+real	0m6.406s
+user	0m6.303s
+sys	0m0.100s
++ python run_vectorizers_32bit.py CountVectorizer 32769
 Vectorizer: CountVectorizer
-n_samples = 65537
-Traceback (most recent call last):
-  File "run_vectorizers_32bit.py", line 24, in <module>
-    X = vect.fit_transform(doc())
-  File "/home/ubuntu/scikit-learn/sklearn/feature_extraction/text.py", line 850, in fit_transform
-    self.fixed_vocabulary_)
-  File "/home/ubuntu/scikit-learn/sklearn/feature_extraction/text.py", line 794, in _count_vocab
-    j_indices = np.asarray(j_indices, dtype=np.intc)
-  File "/home/ubuntu/miniconda3/envs/sklearn-env/lib/python3.6/site-packages/numpy/core/numeric.py", line 531, in asarray
-    return array(a, dtype, copy=False, order=order)
-MemoryError
+  pars:  {}
+n_samples = 32769
 
-real	63m50.342s
-user	60m40.065s
-sys	3m8.821s
-+ python run_vectorizers_32bit.py TfidfVectorizer 65537
+# Resulting array (X):
+ * indptr len=32770 dtype=int64
+ * indices len=2147581953 dtype=int64
+ * data len=2147581953 dtype=int64
+
+real	33m30.528s
+user	31m21.656s
+sys	2m2.950s
++ python run_vectorizers_32bit.py TfidfVectorizer 32769
 Vectorizer: TfidfVectorizer
-n_samples = 65537
-Traceback (most recent call last):
-  File "run_vectorizers_32bit.py", line 24, in <module>
-    X = vect.fit_transform(doc())
-  File "/home/ubuntu/scikit-learn/sklearn/feature_extraction/text.py", line 1365, in fit_transform
-    X = super(TfidfVectorizer, self).fit_transform(raw_documents)
-  File "/home/ubuntu/scikit-learn/sklearn/feature_extraction/text.py", line 850, in fit_transform
-    self.fixed_vocabulary_)
-  File "/home/ubuntu/scikit-learn/sklearn/feature_extraction/text.py", line 794, in _count_vocab
-    j_indices = np.asarray(j_indices, dtype=np.intc)
-  File "/home/ubuntu/miniconda3/envs/sklearn-env/lib/python3.6/site-packages/numpy/core/numeric.py", line 531, in asarray
-    return array(a, dtype, copy=False, order=order)
-MemoryError
+  pars:  {'norm': None}
+n_samples = 32769
 
-real	66m7.357s
-user	61m57.308s
-sys	4m8.515s
-+ python run_vectorizers_32bit.py HashingVectorizer 67537
+# Resulting array (X):
+ * indptr len=32770 dtype=int64
+ * indices len=2147581953 dtype=int64
+ * data len=2147581953 dtype=float64
+
+real	34m38.949s
+user	32m20.345s
+sys	2m12.391s
++ python run_vectorizers_32bit.py HashingVectorizer 32769
+Vectorizer: HashingVectorizer
+  pars:  {'norm': None}
+n_samples = 32769
+
+# Resulting array (X):
+ * indptr len=32770 dtype=int64
+ * indices len=2081749032 dtype=int64
+ * data len=2081749032 dtype=float64
+
+real	32m1.660s
+user	31m36.058s
+sys	0m25.000s
