@@ -1,0 +1,1634 @@
+============================= test session starts ==============================
+platform linux -- Python 3.6.1, pytest-3.0.7, py-1.4.33, pluggy-0.4.0 -- /home/rth/.miniconda3/envs/sklearn-env/bin/python
+cachedir: .cache
+rootdir: /home/rth/data-science/notebooks/sklearn/issue_2969, inifile:
+plugins: xdist-1.16.0
+gw0 I
+[gw0] linux Python 3.6.1 cwd: /home/rth/data-science/notebooks/sklearn/issue_2969
+[gw0] Python 3.6.1 |Continuum Analytics, Inc.| (default, Mar 22 2017, 19:54:23)  -- [GCC 4.4.7 20120313 (Red Hat 4.4.7-1)]
+gw0 [45]
+
+scheduling tests via LoadScheduling
+
+test_64bit_csr_indices.py::test_preprocessing_normalize[l1-False] 
+[gw0] FAILED test_64bit_csr_indices.py::test_preprocessing_normalize[l1-False] 
+test_64bit_csr_indices.py::test_preprocessing_normalize[l1-True] 
+[gw0] PASSED test_64bit_csr_indices.py::test_preprocessing_normalize[l1-True] 
+test_64bit_csr_indices.py::test_preprocessing_normalize[l2-False] 
+[gw0] FAILED test_64bit_csr_indices.py::test_preprocessing_normalize[l2-False] 
+test_64bit_csr_indices.py::test_preprocessing_normalize[l2-True] 
+[gw0] PASSED test_64bit_csr_indices.py::test_preprocessing_normalize[l2-True] 
+test_64bit_csr_indices.py::test_decomposition_truncatedsvd[randomized] 
+[gw0] PASSED test_64bit_csr_indices.py::test_decomposition_truncatedsvd[randomized] 
+test_64bit_csr_indices.py::test_decomposition_truncatedsvd[arpack] 
+[gw0] PASSED test_64bit_csr_indices.py::test_decomposition_truncatedsvd[arpack] 
+test_64bit_csr_indices.py::test_decomposition_nmf[cd] 
+[gw0] PASSED test_64bit_csr_indices.py::test_decomposition_nmf[cd] 
+test_64bit_csr_indices.py::test_decomposition_nmf[mu] /home/rth/src/scikit-learn/sklearn/decomposition/nmf.py:1021: ConvergenceWarning: Maximum number of iteration 200 reached. Increase it to improve convergence.
+  " improve convergence." % max_iter, ConvergenceWarning)
+
+[gw0] PASSED test_64bit_csr_indices.py::test_decomposition_nmf[mu] 
+test_64bit_csr_indices.py::test_linear_model_logisticregression[liblinear-l1] 
+[gw0] node down: Not properly terminated
+[gw0] FAILED test_64bit_csr_indices.py::test_linear_model_logisticregression[liblinear-l1] 
+Replacing crashed slave gw0
+[gw1] linux Python 3.6.1 cwd: /home/rth/data-science/notebooks/sklearn/issue_2969
+[gw1] Python 3.6.1 |Continuum Analytics, Inc.| (default, Mar 22 2017, 19:54:23)  -- [GCC 4.4.7 20120313 (Red Hat 4.4.7-1)]
+
+test_64bit_csr_indices.py::test_linear_model_sgdclassifier[modified_huber-elasticnet] 
+[gw1] FAILED test_64bit_csr_indices.py::test_linear_model_sgdclassifier[modified_huber-elasticnet] 
+test_64bit_csr_indices.py::test_linear_model_sgdclassifier[squared_hinge-l1] 
+[gw1] FAILED test_64bit_csr_indices.py::test_linear_model_sgdclassifier[squared_hinge-l1] 
+test_64bit_csr_indices.py::test_linear_model_sgdclassifier[squared_hinge-l2] 
+[gw1] FAILED test_64bit_csr_indices.py::test_linear_model_sgdclassifier[squared_hinge-l2] 
+test_64bit_csr_indices.py::test_linear_model_sgdclassifier[squared_hinge-elasticnet] 
+[gw1] FAILED test_64bit_csr_indices.py::test_linear_model_sgdclassifier[squared_hinge-elasticnet] 
+test_64bit_csr_indices.py::test_linear_model_sgdclassifier[perceptron-l1] 
+[gw1] FAILED test_64bit_csr_indices.py::test_linear_model_sgdclassifier[perceptron-l1] 
+test_64bit_csr_indices.py::test_linear_model_sgdclassifier[perceptron-l2] 
+[gw1] FAILED test_64bit_csr_indices.py::test_linear_model_sgdclassifier[perceptron-l2] 
+test_64bit_csr_indices.py::test_linear_model_sgdclassifier[perceptron-elasticnet] 
+[gw1] FAILED test_64bit_csr_indices.py::test_linear_model_sgdclassifier[perceptron-elasticnet] 
+test_64bit_csr_indices.py::test_linear_model_sgdregressor[squared_loss-l1] 
+[gw1] FAILED test_64bit_csr_indices.py::test_linear_model_sgdregressor[squared_loss-l1] 
+test_64bit_csr_indices.py::test_linear_model_sgdregressor[squared_loss-l2] 
+[gw1] FAILED test_64bit_csr_indices.py::test_linear_model_sgdregressor[squared_loss-l2] 
+test_64bit_csr_indices.py::test_linear_model_sgdregressor[squared_loss-elasticnet] 
+[gw1] FAILED test_64bit_csr_indices.py::test_linear_model_sgdregressor[squared_loss-elasticnet] 
+test_64bit_csr_indices.py::test_linear_model_sgdregressor[huber-l1] 
+[gw1] FAILED test_64bit_csr_indices.py::test_linear_model_sgdregressor[huber-l1] 
+test_64bit_csr_indices.py::test_linear_model_sgdregressor[huber-l2] 
+[gw1] FAILED test_64bit_csr_indices.py::test_linear_model_sgdregressor[huber-l2] 
+test_64bit_csr_indices.py::test_linear_model_sgdregressor[huber-elasticnet] 
+[gw1] FAILED test_64bit_csr_indices.py::test_linear_model_sgdregressor[huber-elasticnet] 
+test_64bit_csr_indices.py::test_linear_model_sgdregressor[epsilon_insensitive-l1] 
+[gw1] FAILED test_64bit_csr_indices.py::test_linear_model_sgdregressor[epsilon_insensitive-l1] 
+test_64bit_csr_indices.py::test_linear_model_sgdregressor[epsilon_insensitive-l2] 
+[gw1] FAILED test_64bit_csr_indices.py::test_linear_model_sgdregressor[epsilon_insensitive-l2] 
+test_64bit_csr_indices.py::test_linear_model_sgdregressor[epsilon_insensitive-elasticnet] 
+[gw1] FAILED test_64bit_csr_indices.py::test_linear_model_sgdregressor[epsilon_insensitive-elasticnet] 
+test_64bit_csr_indices.py::test_linear_model_sgdregressor[squared_epsilon_insensitive-l1] 
+[gw1] FAILED test_64bit_csr_indices.py::test_linear_model_sgdregressor[squared_epsilon_insensitive-l1] 
+test_64bit_csr_indices.py::test_linear_model_sgdregressor[squared_epsilon_insensitive-l2] 
+[gw1] FAILED test_64bit_csr_indices.py::test_linear_model_sgdregressor[squared_epsilon_insensitive-l2] 
+test_64bit_csr_indices.py::test_linear_model_sgdregressor[squared_epsilon_insensitive-elasticnet] 
+[gw1] FAILED test_64bit_csr_indices.py::test_linear_model_sgdregressor[squared_epsilon_insensitive-elasticnet] 
+test_64bit_csr_indices.py::test_linear_model_estimator[linear_model.LinearRegression] 
+[gw1] PASSED test_64bit_csr_indices.py::test_linear_model_estimator[linear_model.LinearRegression] 
+test_64bit_csr_indices.py::test_linear_model_estimator[linear_model.ElasticNet] 
+[gw1] PASSED test_64bit_csr_indices.py::test_linear_model_estimator[linear_model.ElasticNet] 
+test_64bit_csr_indices.py::test_linear_model_estimator[svm.LinearSVC] 
+[gw1] node down: Not properly terminated
+[gw1] FAILED test_64bit_csr_indices.py::test_linear_model_estimator[svm.LinearSVC] 
+Replacing crashed slave gw1
+[gw2] linux Python 3.6.1 cwd: /home/rth/data-science/notebooks/sklearn/issue_2969
+[gw2] Python 3.6.1 |Continuum Analytics, Inc.| (default, Mar 22 2017, 19:54:23)  -- [GCC 4.4.7 20120313 (Red Hat 4.4.7-1)]
+
+test_64bit_csr_indices.py::test_linear_model_logisticregression[liblinear-l2] 
+[gw2] node down: Not properly terminated
+[gw2] FAILED test_64bit_csr_indices.py::test_linear_model_logisticregression[liblinear-l2] 
+Replacing crashed slave gw2
+[gw3] linux Python 3.6.1 cwd: /home/rth/data-science/notebooks/sklearn/issue_2969
+[gw3] Python 3.6.1 |Continuum Analytics, Inc.| (default, Mar 22 2017, 19:54:23)  -- [GCC 4.4.7 20120313 (Red Hat 4.4.7-1)]
+
+test_64bit_csr_indices.py::test_linear_model_sgdclassifier[log-l1] 
+[gw3] FAILED test_64bit_csr_indices.py::test_linear_model_sgdclassifier[log-l1] 
+test_64bit_csr_indices.py::test_linear_model_sgdclassifier[log-l2] 
+[gw3] FAILED test_64bit_csr_indices.py::test_linear_model_sgdclassifier[log-l2] 
+test_64bit_csr_indices.py::test_linear_model_sgdclassifier[log-elasticnet] 
+[gw3] FAILED test_64bit_csr_indices.py::test_linear_model_sgdclassifier[log-elasticnet] 
+test_64bit_csr_indices.py::test_linear_model_sgdclassifier[modified_huber-l1] 
+[gw3] FAILED test_64bit_csr_indices.py::test_linear_model_sgdclassifier[modified_huber-l1] 
+test_64bit_csr_indices.py::test_linear_model_sgdclassifier[modified_huber-l2] 
+[gw3] FAILED test_64bit_csr_indices.py::test_linear_model_sgdclassifier[modified_huber-l2] 
+test_64bit_csr_indices.py::test_linear_model_estimator[svm.SVC] 
+[gw3] FAILED test_64bit_csr_indices.py::test_linear_model_estimator[svm.SVC] 
+test_64bit_csr_indices.py::test_linear_model_estimator[tree.DecisionTreeClassifier] 
+[gw3] PASSED test_64bit_csr_indices.py::test_linear_model_estimator[tree.DecisionTreeClassifier] 
+test_64bit_csr_indices.py::test_linear_model_logisticregression[newton-cg-l2] 
+[gw3] PASSED test_64bit_csr_indices.py::test_linear_model_logisticregression[newton-cg-l2] 
+test_64bit_csr_indices.py::test_linear_model_logisticregression[lbfgs-l2] 
+[gw3] PASSED test_64bit_csr_indices.py::test_linear_model_logisticregression[lbfgs-l2] 
+test_64bit_csr_indices.py::test_linear_model_logisticregression[sag-l2] 
+[gw3] FAILED test_64bit_csr_indices.py::test_linear_model_logisticregression[sag-l2] 
+test_64bit_csr_indices.py::test_linear_model_sgdclassifier[hinge-l1] 
+[gw3] FAILED test_64bit_csr_indices.py::test_linear_model_sgdclassifier[hinge-l1] 
+test_64bit_csr_indices.py::test_linear_model_sgdclassifier[hinge-l2] 
+[gw3] FAILED test_64bit_csr_indices.py::test_linear_model_sgdclassifier[hinge-l2] 
+test_64bit_csr_indices.py::test_linear_model_sgdclassifier[hinge-elasticnet] 
+[gw3] FAILED test_64bit_csr_indices.py::test_linear_model_sgdclassifier[hinge-elasticnet] 
+
+=================================== FAILURES ===================================
+____________________ test_preprocessing_normalize[l1-False] ____________________
+[gw0] linux -- Python 3.6.1 /home/rth/.miniconda3/envs/sklearn-env/bin/python
+norm = 'l1', copy = False
+
+    @pytest.mark.parametrize('norm, copy',
+                             itertools.product(['l1', 'l2'],
+                                               [False, True]))
+    def test_preprocessing_normalize(norm, copy):
+        from sklearn.preprocessing import normalize
+    
+        print({"norm": norm, 'copy': copy}, ' ', end='')
+    
+        X, y = init_arrays()
+    
+        assert str(X.indices.dtype) == 'int64'
+    
+>       normalize(X, norm=norm, copy=copy)
+
+test_64bit_csr_indices.py:33: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/home/rth/src/scikit-learn/sklearn/preprocessing/data.py:1349: in normalize
+    inplace_csr_row_normalize_l1(X)
+sklearn/utils/sparsefuncs_fast.pyx:324: in sklearn.utils.sparsefuncs_fast.inplace_csr_row_normalize_l1 (sklearn/utils/sparsefuncs_fast.c:11283)
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+>   ???
+E   ValueError: Buffer dtype mismatch, expected 'int' but got 'long'
+
+sklearn/utils/sparsefuncs_fast.pyx:327: ValueError
+____________________ test_preprocessing_normalize[l2-False] ____________________
+[gw0] linux -- Python 3.6.1 /home/rth/.miniconda3/envs/sklearn-env/bin/python
+norm = 'l2', copy = False
+
+    @pytest.mark.parametrize('norm, copy',
+                             itertools.product(['l1', 'l2'],
+                                               [False, True]))
+    def test_preprocessing_normalize(norm, copy):
+        from sklearn.preprocessing import normalize
+    
+        print({"norm": norm, 'copy': copy}, ' ', end='')
+    
+        X, y = init_arrays()
+    
+        assert str(X.indices.dtype) == 'int64'
+    
+>       normalize(X, norm=norm, copy=copy)
+
+test_64bit_csr_indices.py:33: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/home/rth/src/scikit-learn/sklearn/preprocessing/data.py:1351: in normalize
+    inplace_csr_row_normalize_l2(X)
+sklearn/utils/sparsefuncs_fast.pyx:359: in sklearn.utils.sparsefuncs_fast.inplace_csr_row_normalize_l2 (sklearn/utils/sparsefuncs_fast.c:12648)
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+>   ???
+E   ValueError: Buffer dtype mismatch, expected 'int' but got 'long'
+
+sklearn/utils/sparsefuncs_fast.pyx:362: ValueError
+__________________________ test_64bit_csr_indices.py ___________________________
+[gw0] linux -- Python 3.6.1 /home/rth/.miniconda3/envs/sklearn-env/bin/python
+Slave 'gw0' crashed while running 'test_64bit_csr_indices.py::test_linear_model_logisticregression[liblinear-l1]'
+__________ test_linear_model_sgdclassifier[modified_huber-elasticnet] __________
+[gw1] linux -- Python 3.6.1 /home/rth/.miniconda3/envs/sklearn-env/bin/python
+loss = 'modified_huber', penalty = 'elasticnet'
+
+    @pytest.mark.parametrize('loss, penalty',
+                             itertools.product(['hinge', 'log', 'modified_huber',
+                                                'squared_hinge', 'perceptron'],
+                                               ['l1', 'l2', 'elasticnet']))
+    def test_linear_model_sgdclassifier(loss, penalty):
+        from sklearn.linear_model import SGDClassifier
+    
+        X, y = init_arrays()
+    
+        cl = SGDClassifier(penalty=penalty, loss=loss)
+>       cl.fit(X, y)
+
+test_64bit_csr_indices.py:85: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:539: in fit
+    sample_weight=sample_weight)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:409: in _fit
+    classes, sample_weight, coef_init, intercept_init)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:367: in _partial_fit
+    sample_weight=sample_weight, n_iter=n_iter)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:451: in _fit_multiclass
+    for i in range(len(self.classes_)))
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:779: in __call__
+    while self.dispatch_one_batch(iterator):
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:625: in dispatch_one_batch
+    self._dispatch(tasks)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:588: in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/_parallel_backends.py:111: in apply_async
+    result = ImmediateResult(func)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/_parallel_backends.py:332: in __init__
+    self.results = batch()
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:131: in __call__
+    return [func(*args, **kwargs) for func, args, kwargs in self.items]
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:131: in <listcomp>
+    return [func(*args, **kwargs) for func, args, kwargs in self.items]
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:249: in fit_binary
+    dataset, intercept_decay = make_dataset(X, y_i, sample_weight)
+/home/rth/src/scikit-learn/sklearn/linear_model/base.py:61: in make_dataset
+    seed=seed)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+>   ???
+E   ValueError: Buffer dtype mismatch, expected 'int' but got 'long'
+
+sklearn/utils/seq_dataset.pyx:223: ValueError
+______________ test_linear_model_sgdclassifier[squared_hinge-l1] _______________
+[gw1] linux -- Python 3.6.1 /home/rth/.miniconda3/envs/sklearn-env/bin/python
+loss = 'squared_hinge', penalty = 'l1'
+
+    @pytest.mark.parametrize('loss, penalty',
+                             itertools.product(['hinge', 'log', 'modified_huber',
+                                                'squared_hinge', 'perceptron'],
+                                               ['l1', 'l2', 'elasticnet']))
+    def test_linear_model_sgdclassifier(loss, penalty):
+        from sklearn.linear_model import SGDClassifier
+    
+        X, y = init_arrays()
+    
+        cl = SGDClassifier(penalty=penalty, loss=loss)
+>       cl.fit(X, y)
+
+test_64bit_csr_indices.py:85: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:539: in fit
+    sample_weight=sample_weight)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:409: in _fit
+    classes, sample_weight, coef_init, intercept_init)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:367: in _partial_fit
+    sample_weight=sample_weight, n_iter=n_iter)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:451: in _fit_multiclass
+    for i in range(len(self.classes_)))
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:779: in __call__
+    while self.dispatch_one_batch(iterator):
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:625: in dispatch_one_batch
+    self._dispatch(tasks)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:588: in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/_parallel_backends.py:111: in apply_async
+    result = ImmediateResult(func)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/_parallel_backends.py:332: in __init__
+    self.results = batch()
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:131: in __call__
+    return [func(*args, **kwargs) for func, args, kwargs in self.items]
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:131: in <listcomp>
+    return [func(*args, **kwargs) for func, args, kwargs in self.items]
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:249: in fit_binary
+    dataset, intercept_decay = make_dataset(X, y_i, sample_weight)
+/home/rth/src/scikit-learn/sklearn/linear_model/base.py:61: in make_dataset
+    seed=seed)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+>   ???
+E   ValueError: Buffer dtype mismatch, expected 'int' but got 'long'
+
+sklearn/utils/seq_dataset.pyx:223: ValueError
+______________ test_linear_model_sgdclassifier[squared_hinge-l2] _______________
+[gw1] linux -- Python 3.6.1 /home/rth/.miniconda3/envs/sklearn-env/bin/python
+loss = 'squared_hinge', penalty = 'l2'
+
+    @pytest.mark.parametrize('loss, penalty',
+                             itertools.product(['hinge', 'log', 'modified_huber',
+                                                'squared_hinge', 'perceptron'],
+                                               ['l1', 'l2', 'elasticnet']))
+    def test_linear_model_sgdclassifier(loss, penalty):
+        from sklearn.linear_model import SGDClassifier
+    
+        X, y = init_arrays()
+    
+        cl = SGDClassifier(penalty=penalty, loss=loss)
+>       cl.fit(X, y)
+
+test_64bit_csr_indices.py:85: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:539: in fit
+    sample_weight=sample_weight)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:409: in _fit
+    classes, sample_weight, coef_init, intercept_init)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:367: in _partial_fit
+    sample_weight=sample_weight, n_iter=n_iter)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:451: in _fit_multiclass
+    for i in range(len(self.classes_)))
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:779: in __call__
+    while self.dispatch_one_batch(iterator):
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:625: in dispatch_one_batch
+    self._dispatch(tasks)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:588: in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/_parallel_backends.py:111: in apply_async
+    result = ImmediateResult(func)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/_parallel_backends.py:332: in __init__
+    self.results = batch()
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:131: in __call__
+    return [func(*args, **kwargs) for func, args, kwargs in self.items]
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:131: in <listcomp>
+    return [func(*args, **kwargs) for func, args, kwargs in self.items]
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:249: in fit_binary
+    dataset, intercept_decay = make_dataset(X, y_i, sample_weight)
+/home/rth/src/scikit-learn/sklearn/linear_model/base.py:61: in make_dataset
+    seed=seed)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+>   ???
+E   ValueError: Buffer dtype mismatch, expected 'int' but got 'long'
+
+sklearn/utils/seq_dataset.pyx:223: ValueError
+__________ test_linear_model_sgdclassifier[squared_hinge-elasticnet] ___________
+[gw1] linux -- Python 3.6.1 /home/rth/.miniconda3/envs/sklearn-env/bin/python
+loss = 'squared_hinge', penalty = 'elasticnet'
+
+    @pytest.mark.parametrize('loss, penalty',
+                             itertools.product(['hinge', 'log', 'modified_huber',
+                                                'squared_hinge', 'perceptron'],
+                                               ['l1', 'l2', 'elasticnet']))
+    def test_linear_model_sgdclassifier(loss, penalty):
+        from sklearn.linear_model import SGDClassifier
+    
+        X, y = init_arrays()
+    
+        cl = SGDClassifier(penalty=penalty, loss=loss)
+>       cl.fit(X, y)
+
+test_64bit_csr_indices.py:85: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:539: in fit
+    sample_weight=sample_weight)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:409: in _fit
+    classes, sample_weight, coef_init, intercept_init)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:367: in _partial_fit
+    sample_weight=sample_weight, n_iter=n_iter)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:451: in _fit_multiclass
+    for i in range(len(self.classes_)))
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:779: in __call__
+    while self.dispatch_one_batch(iterator):
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:625: in dispatch_one_batch
+    self._dispatch(tasks)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:588: in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/_parallel_backends.py:111: in apply_async
+    result = ImmediateResult(func)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/_parallel_backends.py:332: in __init__
+    self.results = batch()
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:131: in __call__
+    return [func(*args, **kwargs) for func, args, kwargs in self.items]
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:131: in <listcomp>
+    return [func(*args, **kwargs) for func, args, kwargs in self.items]
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:249: in fit_binary
+    dataset, intercept_decay = make_dataset(X, y_i, sample_weight)
+/home/rth/src/scikit-learn/sklearn/linear_model/base.py:61: in make_dataset
+    seed=seed)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+>   ???
+E   ValueError: Buffer dtype mismatch, expected 'int' but got 'long'
+
+sklearn/utils/seq_dataset.pyx:223: ValueError
+________________ test_linear_model_sgdclassifier[perceptron-l1] ________________
+[gw1] linux -- Python 3.6.1 /home/rth/.miniconda3/envs/sklearn-env/bin/python
+loss = 'perceptron', penalty = 'l1'
+
+    @pytest.mark.parametrize('loss, penalty',
+                             itertools.product(['hinge', 'log', 'modified_huber',
+                                                'squared_hinge', 'perceptron'],
+                                               ['l1', 'l2', 'elasticnet']))
+    def test_linear_model_sgdclassifier(loss, penalty):
+        from sklearn.linear_model import SGDClassifier
+    
+        X, y = init_arrays()
+    
+        cl = SGDClassifier(penalty=penalty, loss=loss)
+>       cl.fit(X, y)
+
+test_64bit_csr_indices.py:85: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:539: in fit
+    sample_weight=sample_weight)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:409: in _fit
+    classes, sample_weight, coef_init, intercept_init)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:367: in _partial_fit
+    sample_weight=sample_weight, n_iter=n_iter)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:451: in _fit_multiclass
+    for i in range(len(self.classes_)))
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:779: in __call__
+    while self.dispatch_one_batch(iterator):
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:625: in dispatch_one_batch
+    self._dispatch(tasks)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:588: in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/_parallel_backends.py:111: in apply_async
+    result = ImmediateResult(func)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/_parallel_backends.py:332: in __init__
+    self.results = batch()
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:131: in __call__
+    return [func(*args, **kwargs) for func, args, kwargs in self.items]
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:131: in <listcomp>
+    return [func(*args, **kwargs) for func, args, kwargs in self.items]
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:249: in fit_binary
+    dataset, intercept_decay = make_dataset(X, y_i, sample_weight)
+/home/rth/src/scikit-learn/sklearn/linear_model/base.py:61: in make_dataset
+    seed=seed)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+>   ???
+E   ValueError: Buffer dtype mismatch, expected 'int' but got 'long'
+
+sklearn/utils/seq_dataset.pyx:223: ValueError
+________________ test_linear_model_sgdclassifier[perceptron-l2] ________________
+[gw1] linux -- Python 3.6.1 /home/rth/.miniconda3/envs/sklearn-env/bin/python
+loss = 'perceptron', penalty = 'l2'
+
+    @pytest.mark.parametrize('loss, penalty',
+                             itertools.product(['hinge', 'log', 'modified_huber',
+                                                'squared_hinge', 'perceptron'],
+                                               ['l1', 'l2', 'elasticnet']))
+    def test_linear_model_sgdclassifier(loss, penalty):
+        from sklearn.linear_model import SGDClassifier
+    
+        X, y = init_arrays()
+    
+        cl = SGDClassifier(penalty=penalty, loss=loss)
+>       cl.fit(X, y)
+
+test_64bit_csr_indices.py:85: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:539: in fit
+    sample_weight=sample_weight)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:409: in _fit
+    classes, sample_weight, coef_init, intercept_init)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:367: in _partial_fit
+    sample_weight=sample_weight, n_iter=n_iter)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:451: in _fit_multiclass
+    for i in range(len(self.classes_)))
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:779: in __call__
+    while self.dispatch_one_batch(iterator):
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:625: in dispatch_one_batch
+    self._dispatch(tasks)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:588: in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/_parallel_backends.py:111: in apply_async
+    result = ImmediateResult(func)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/_parallel_backends.py:332: in __init__
+    self.results = batch()
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:131: in __call__
+    return [func(*args, **kwargs) for func, args, kwargs in self.items]
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:131: in <listcomp>
+    return [func(*args, **kwargs) for func, args, kwargs in self.items]
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:249: in fit_binary
+    dataset, intercept_decay = make_dataset(X, y_i, sample_weight)
+/home/rth/src/scikit-learn/sklearn/linear_model/base.py:61: in make_dataset
+    seed=seed)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+>   ???
+E   ValueError: Buffer dtype mismatch, expected 'int' but got 'long'
+
+sklearn/utils/seq_dataset.pyx:223: ValueError
+____________ test_linear_model_sgdclassifier[perceptron-elasticnet] ____________
+[gw1] linux -- Python 3.6.1 /home/rth/.miniconda3/envs/sklearn-env/bin/python
+loss = 'perceptron', penalty = 'elasticnet'
+
+    @pytest.mark.parametrize('loss, penalty',
+                             itertools.product(['hinge', 'log', 'modified_huber',
+                                                'squared_hinge', 'perceptron'],
+                                               ['l1', 'l2', 'elasticnet']))
+    def test_linear_model_sgdclassifier(loss, penalty):
+        from sklearn.linear_model import SGDClassifier
+    
+        X, y = init_arrays()
+    
+        cl = SGDClassifier(penalty=penalty, loss=loss)
+>       cl.fit(X, y)
+
+test_64bit_csr_indices.py:85: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:539: in fit
+    sample_weight=sample_weight)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:409: in _fit
+    classes, sample_weight, coef_init, intercept_init)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:367: in _partial_fit
+    sample_weight=sample_weight, n_iter=n_iter)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:451: in _fit_multiclass
+    for i in range(len(self.classes_)))
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:779: in __call__
+    while self.dispatch_one_batch(iterator):
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:625: in dispatch_one_batch
+    self._dispatch(tasks)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:588: in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/_parallel_backends.py:111: in apply_async
+    result = ImmediateResult(func)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/_parallel_backends.py:332: in __init__
+    self.results = batch()
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:131: in __call__
+    return [func(*args, **kwargs) for func, args, kwargs in self.items]
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:131: in <listcomp>
+    return [func(*args, **kwargs) for func, args, kwargs in self.items]
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:249: in fit_binary
+    dataset, intercept_decay = make_dataset(X, y_i, sample_weight)
+/home/rth/src/scikit-learn/sklearn/linear_model/base.py:61: in make_dataset
+    seed=seed)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+>   ???
+E   ValueError: Buffer dtype mismatch, expected 'int' but got 'long'
+
+sklearn/utils/seq_dataset.pyx:223: ValueError
+_______________ test_linear_model_sgdregressor[squared_loss-l1] ________________
+[gw1] linux -- Python 3.6.1 /home/rth/.miniconda3/envs/sklearn-env/bin/python
+loss = 'squared_loss', penalty = 'l1'
+
+    @pytest.mark.parametrize('loss, penalty',
+                             itertools.product(['squared_loss', 'huber',
+                                                'epsilon_insensitive',
+                                                'squared_epsilon_insensitive'],
+                                               ['l1', 'l2', 'elasticnet']))
+    def test_linear_model_sgdregressor(loss, penalty):
+        from sklearn.linear_model import SGDClassifier
+    
+        X, y = init_arrays()
+    
+        cl = SGDClassifier(penalty=penalty, loss=loss)
+>       cl.fit(X, y)
+
+test_64bit_csr_indices.py:101: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:539: in fit
+    sample_weight=sample_weight)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:409: in _fit
+    classes, sample_weight, coef_init, intercept_init)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:367: in _partial_fit
+    sample_weight=sample_weight, n_iter=n_iter)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:451: in _fit_multiclass
+    for i in range(len(self.classes_)))
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:779: in __call__
+    while self.dispatch_one_batch(iterator):
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:625: in dispatch_one_batch
+    self._dispatch(tasks)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:588: in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/_parallel_backends.py:111: in apply_async
+    result = ImmediateResult(func)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/_parallel_backends.py:332: in __init__
+    self.results = batch()
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:131: in __call__
+    return [func(*args, **kwargs) for func, args, kwargs in self.items]
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:131: in <listcomp>
+    return [func(*args, **kwargs) for func, args, kwargs in self.items]
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:249: in fit_binary
+    dataset, intercept_decay = make_dataset(X, y_i, sample_weight)
+/home/rth/src/scikit-learn/sklearn/linear_model/base.py:61: in make_dataset
+    seed=seed)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+>   ???
+E   ValueError: Buffer dtype mismatch, expected 'int' but got 'long'
+
+sklearn/utils/seq_dataset.pyx:223: ValueError
+_______________ test_linear_model_sgdregressor[squared_loss-l2] ________________
+[gw1] linux -- Python 3.6.1 /home/rth/.miniconda3/envs/sklearn-env/bin/python
+loss = 'squared_loss', penalty = 'l2'
+
+    @pytest.mark.parametrize('loss, penalty',
+                             itertools.product(['squared_loss', 'huber',
+                                                'epsilon_insensitive',
+                                                'squared_epsilon_insensitive'],
+                                               ['l1', 'l2', 'elasticnet']))
+    def test_linear_model_sgdregressor(loss, penalty):
+        from sklearn.linear_model import SGDClassifier
+    
+        X, y = init_arrays()
+    
+        cl = SGDClassifier(penalty=penalty, loss=loss)
+>       cl.fit(X, y)
+
+test_64bit_csr_indices.py:101: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:539: in fit
+    sample_weight=sample_weight)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:409: in _fit
+    classes, sample_weight, coef_init, intercept_init)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:367: in _partial_fit
+    sample_weight=sample_weight, n_iter=n_iter)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:451: in _fit_multiclass
+    for i in range(len(self.classes_)))
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:779: in __call__
+    while self.dispatch_one_batch(iterator):
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:625: in dispatch_one_batch
+    self._dispatch(tasks)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:588: in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/_parallel_backends.py:111: in apply_async
+    result = ImmediateResult(func)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/_parallel_backends.py:332: in __init__
+    self.results = batch()
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:131: in __call__
+    return [func(*args, **kwargs) for func, args, kwargs in self.items]
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:131: in <listcomp>
+    return [func(*args, **kwargs) for func, args, kwargs in self.items]
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:249: in fit_binary
+    dataset, intercept_decay = make_dataset(X, y_i, sample_weight)
+/home/rth/src/scikit-learn/sklearn/linear_model/base.py:61: in make_dataset
+    seed=seed)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+>   ???
+E   ValueError: Buffer dtype mismatch, expected 'int' but got 'long'
+
+sklearn/utils/seq_dataset.pyx:223: ValueError
+___________ test_linear_model_sgdregressor[squared_loss-elasticnet] ____________
+[gw1] linux -- Python 3.6.1 /home/rth/.miniconda3/envs/sklearn-env/bin/python
+loss = 'squared_loss', penalty = 'elasticnet'
+
+    @pytest.mark.parametrize('loss, penalty',
+                             itertools.product(['squared_loss', 'huber',
+                                                'epsilon_insensitive',
+                                                'squared_epsilon_insensitive'],
+                                               ['l1', 'l2', 'elasticnet']))
+    def test_linear_model_sgdregressor(loss, penalty):
+        from sklearn.linear_model import SGDClassifier
+    
+        X, y = init_arrays()
+    
+        cl = SGDClassifier(penalty=penalty, loss=loss)
+>       cl.fit(X, y)
+
+test_64bit_csr_indices.py:101: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:539: in fit
+    sample_weight=sample_weight)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:409: in _fit
+    classes, sample_weight, coef_init, intercept_init)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:367: in _partial_fit
+    sample_weight=sample_weight, n_iter=n_iter)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:451: in _fit_multiclass
+    for i in range(len(self.classes_)))
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:779: in __call__
+    while self.dispatch_one_batch(iterator):
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:625: in dispatch_one_batch
+    self._dispatch(tasks)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:588: in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/_parallel_backends.py:111: in apply_async
+    result = ImmediateResult(func)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/_parallel_backends.py:332: in __init__
+    self.results = batch()
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:131: in __call__
+    return [func(*args, **kwargs) for func, args, kwargs in self.items]
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:131: in <listcomp>
+    return [func(*args, **kwargs) for func, args, kwargs in self.items]
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:249: in fit_binary
+    dataset, intercept_decay = make_dataset(X, y_i, sample_weight)
+/home/rth/src/scikit-learn/sklearn/linear_model/base.py:61: in make_dataset
+    seed=seed)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+>   ???
+E   ValueError: Buffer dtype mismatch, expected 'int' but got 'long'
+
+sklearn/utils/seq_dataset.pyx:223: ValueError
+___________________ test_linear_model_sgdregressor[huber-l1] ___________________
+[gw1] linux -- Python 3.6.1 /home/rth/.miniconda3/envs/sklearn-env/bin/python
+loss = 'huber', penalty = 'l1'
+
+    @pytest.mark.parametrize('loss, penalty',
+                             itertools.product(['squared_loss', 'huber',
+                                                'epsilon_insensitive',
+                                                'squared_epsilon_insensitive'],
+                                               ['l1', 'l2', 'elasticnet']))
+    def test_linear_model_sgdregressor(loss, penalty):
+        from sklearn.linear_model import SGDClassifier
+    
+        X, y = init_arrays()
+    
+        cl = SGDClassifier(penalty=penalty, loss=loss)
+>       cl.fit(X, y)
+
+test_64bit_csr_indices.py:101: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:539: in fit
+    sample_weight=sample_weight)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:409: in _fit
+    classes, sample_weight, coef_init, intercept_init)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:367: in _partial_fit
+    sample_weight=sample_weight, n_iter=n_iter)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:451: in _fit_multiclass
+    for i in range(len(self.classes_)))
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:779: in __call__
+    while self.dispatch_one_batch(iterator):
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:625: in dispatch_one_batch
+    self._dispatch(tasks)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:588: in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/_parallel_backends.py:111: in apply_async
+    result = ImmediateResult(func)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/_parallel_backends.py:332: in __init__
+    self.results = batch()
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:131: in __call__
+    return [func(*args, **kwargs) for func, args, kwargs in self.items]
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:131: in <listcomp>
+    return [func(*args, **kwargs) for func, args, kwargs in self.items]
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:249: in fit_binary
+    dataset, intercept_decay = make_dataset(X, y_i, sample_weight)
+/home/rth/src/scikit-learn/sklearn/linear_model/base.py:61: in make_dataset
+    seed=seed)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+>   ???
+E   ValueError: Buffer dtype mismatch, expected 'int' but got 'long'
+
+sklearn/utils/seq_dataset.pyx:223: ValueError
+___________________ test_linear_model_sgdregressor[huber-l2] ___________________
+[gw1] linux -- Python 3.6.1 /home/rth/.miniconda3/envs/sklearn-env/bin/python
+loss = 'huber', penalty = 'l2'
+
+    @pytest.mark.parametrize('loss, penalty',
+                             itertools.product(['squared_loss', 'huber',
+                                                'epsilon_insensitive',
+                                                'squared_epsilon_insensitive'],
+                                               ['l1', 'l2', 'elasticnet']))
+    def test_linear_model_sgdregressor(loss, penalty):
+        from sklearn.linear_model import SGDClassifier
+    
+        X, y = init_arrays()
+    
+        cl = SGDClassifier(penalty=penalty, loss=loss)
+>       cl.fit(X, y)
+
+test_64bit_csr_indices.py:101: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:539: in fit
+    sample_weight=sample_weight)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:409: in _fit
+    classes, sample_weight, coef_init, intercept_init)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:367: in _partial_fit
+    sample_weight=sample_weight, n_iter=n_iter)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:451: in _fit_multiclass
+    for i in range(len(self.classes_)))
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:779: in __call__
+    while self.dispatch_one_batch(iterator):
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:625: in dispatch_one_batch
+    self._dispatch(tasks)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:588: in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/_parallel_backends.py:111: in apply_async
+    result = ImmediateResult(func)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/_parallel_backends.py:332: in __init__
+    self.results = batch()
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:131: in __call__
+    return [func(*args, **kwargs) for func, args, kwargs in self.items]
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:131: in <listcomp>
+    return [func(*args, **kwargs) for func, args, kwargs in self.items]
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:249: in fit_binary
+    dataset, intercept_decay = make_dataset(X, y_i, sample_weight)
+/home/rth/src/scikit-learn/sklearn/linear_model/base.py:61: in make_dataset
+    seed=seed)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+>   ???
+E   ValueError: Buffer dtype mismatch, expected 'int' but got 'long'
+
+sklearn/utils/seq_dataset.pyx:223: ValueError
+_______________ test_linear_model_sgdregressor[huber-elasticnet] _______________
+[gw1] linux -- Python 3.6.1 /home/rth/.miniconda3/envs/sklearn-env/bin/python
+loss = 'huber', penalty = 'elasticnet'
+
+    @pytest.mark.parametrize('loss, penalty',
+                             itertools.product(['squared_loss', 'huber',
+                                                'epsilon_insensitive',
+                                                'squared_epsilon_insensitive'],
+                                               ['l1', 'l2', 'elasticnet']))
+    def test_linear_model_sgdregressor(loss, penalty):
+        from sklearn.linear_model import SGDClassifier
+    
+        X, y = init_arrays()
+    
+        cl = SGDClassifier(penalty=penalty, loss=loss)
+>       cl.fit(X, y)
+
+test_64bit_csr_indices.py:101: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:539: in fit
+    sample_weight=sample_weight)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:409: in _fit
+    classes, sample_weight, coef_init, intercept_init)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:367: in _partial_fit
+    sample_weight=sample_weight, n_iter=n_iter)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:451: in _fit_multiclass
+    for i in range(len(self.classes_)))
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:779: in __call__
+    while self.dispatch_one_batch(iterator):
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:625: in dispatch_one_batch
+    self._dispatch(tasks)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:588: in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/_parallel_backends.py:111: in apply_async
+    result = ImmediateResult(func)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/_parallel_backends.py:332: in __init__
+    self.results = batch()
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:131: in __call__
+    return [func(*args, **kwargs) for func, args, kwargs in self.items]
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:131: in <listcomp>
+    return [func(*args, **kwargs) for func, args, kwargs in self.items]
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:249: in fit_binary
+    dataset, intercept_decay = make_dataset(X, y_i, sample_weight)
+/home/rth/src/scikit-learn/sklearn/linear_model/base.py:61: in make_dataset
+    seed=seed)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+>   ???
+E   ValueError: Buffer dtype mismatch, expected 'int' but got 'long'
+
+sklearn/utils/seq_dataset.pyx:223: ValueError
+____________ test_linear_model_sgdregressor[epsilon_insensitive-l1] ____________
+[gw1] linux -- Python 3.6.1 /home/rth/.miniconda3/envs/sklearn-env/bin/python
+loss = 'epsilon_insensitive', penalty = 'l1'
+
+    @pytest.mark.parametrize('loss, penalty',
+                             itertools.product(['squared_loss', 'huber',
+                                                'epsilon_insensitive',
+                                                'squared_epsilon_insensitive'],
+                                               ['l1', 'l2', 'elasticnet']))
+    def test_linear_model_sgdregressor(loss, penalty):
+        from sklearn.linear_model import SGDClassifier
+    
+        X, y = init_arrays()
+    
+        cl = SGDClassifier(penalty=penalty, loss=loss)
+>       cl.fit(X, y)
+
+test_64bit_csr_indices.py:101: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:539: in fit
+    sample_weight=sample_weight)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:409: in _fit
+    classes, sample_weight, coef_init, intercept_init)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:367: in _partial_fit
+    sample_weight=sample_weight, n_iter=n_iter)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:451: in _fit_multiclass
+    for i in range(len(self.classes_)))
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:779: in __call__
+    while self.dispatch_one_batch(iterator):
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:625: in dispatch_one_batch
+    self._dispatch(tasks)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:588: in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/_parallel_backends.py:111: in apply_async
+    result = ImmediateResult(func)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/_parallel_backends.py:332: in __init__
+    self.results = batch()
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:131: in __call__
+    return [func(*args, **kwargs) for func, args, kwargs in self.items]
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:131: in <listcomp>
+    return [func(*args, **kwargs) for func, args, kwargs in self.items]
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:249: in fit_binary
+    dataset, intercept_decay = make_dataset(X, y_i, sample_weight)
+/home/rth/src/scikit-learn/sklearn/linear_model/base.py:61: in make_dataset
+    seed=seed)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+>   ???
+E   ValueError: Buffer dtype mismatch, expected 'int' but got 'long'
+
+sklearn/utils/seq_dataset.pyx:223: ValueError
+____________ test_linear_model_sgdregressor[epsilon_insensitive-l2] ____________
+[gw1] linux -- Python 3.6.1 /home/rth/.miniconda3/envs/sklearn-env/bin/python
+loss = 'epsilon_insensitive', penalty = 'l2'
+
+    @pytest.mark.parametrize('loss, penalty',
+                             itertools.product(['squared_loss', 'huber',
+                                                'epsilon_insensitive',
+                                                'squared_epsilon_insensitive'],
+                                               ['l1', 'l2', 'elasticnet']))
+    def test_linear_model_sgdregressor(loss, penalty):
+        from sklearn.linear_model import SGDClassifier
+    
+        X, y = init_arrays()
+    
+        cl = SGDClassifier(penalty=penalty, loss=loss)
+>       cl.fit(X, y)
+
+test_64bit_csr_indices.py:101: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:539: in fit
+    sample_weight=sample_weight)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:409: in _fit
+    classes, sample_weight, coef_init, intercept_init)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:367: in _partial_fit
+    sample_weight=sample_weight, n_iter=n_iter)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:451: in _fit_multiclass
+    for i in range(len(self.classes_)))
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:779: in __call__
+    while self.dispatch_one_batch(iterator):
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:625: in dispatch_one_batch
+    self._dispatch(tasks)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:588: in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/_parallel_backends.py:111: in apply_async
+    result = ImmediateResult(func)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/_parallel_backends.py:332: in __init__
+    self.results = batch()
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:131: in __call__
+    return [func(*args, **kwargs) for func, args, kwargs in self.items]
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:131: in <listcomp>
+    return [func(*args, **kwargs) for func, args, kwargs in self.items]
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:249: in fit_binary
+    dataset, intercept_decay = make_dataset(X, y_i, sample_weight)
+/home/rth/src/scikit-learn/sklearn/linear_model/base.py:61: in make_dataset
+    seed=seed)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+>   ???
+E   ValueError: Buffer dtype mismatch, expected 'int' but got 'long'
+
+sklearn/utils/seq_dataset.pyx:223: ValueError
+________ test_linear_model_sgdregressor[epsilon_insensitive-elasticnet] ________
+[gw1] linux -- Python 3.6.1 /home/rth/.miniconda3/envs/sklearn-env/bin/python
+loss = 'epsilon_insensitive', penalty = 'elasticnet'
+
+    @pytest.mark.parametrize('loss, penalty',
+                             itertools.product(['squared_loss', 'huber',
+                                                'epsilon_insensitive',
+                                                'squared_epsilon_insensitive'],
+                                               ['l1', 'l2', 'elasticnet']))
+    def test_linear_model_sgdregressor(loss, penalty):
+        from sklearn.linear_model import SGDClassifier
+    
+        X, y = init_arrays()
+    
+        cl = SGDClassifier(penalty=penalty, loss=loss)
+>       cl.fit(X, y)
+
+test_64bit_csr_indices.py:101: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:539: in fit
+    sample_weight=sample_weight)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:409: in _fit
+    classes, sample_weight, coef_init, intercept_init)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:367: in _partial_fit
+    sample_weight=sample_weight, n_iter=n_iter)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:451: in _fit_multiclass
+    for i in range(len(self.classes_)))
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:779: in __call__
+    while self.dispatch_one_batch(iterator):
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:625: in dispatch_one_batch
+    self._dispatch(tasks)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:588: in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/_parallel_backends.py:111: in apply_async
+    result = ImmediateResult(func)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/_parallel_backends.py:332: in __init__
+    self.results = batch()
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:131: in __call__
+    return [func(*args, **kwargs) for func, args, kwargs in self.items]
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:131: in <listcomp>
+    return [func(*args, **kwargs) for func, args, kwargs in self.items]
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:249: in fit_binary
+    dataset, intercept_decay = make_dataset(X, y_i, sample_weight)
+/home/rth/src/scikit-learn/sklearn/linear_model/base.py:61: in make_dataset
+    seed=seed)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+>   ???
+E   ValueError: Buffer dtype mismatch, expected 'int' but got 'long'
+
+sklearn/utils/seq_dataset.pyx:223: ValueError
+________ test_linear_model_sgdregressor[squared_epsilon_insensitive-l1] ________
+[gw1] linux -- Python 3.6.1 /home/rth/.miniconda3/envs/sklearn-env/bin/python
+loss = 'squared_epsilon_insensitive', penalty = 'l1'
+
+    @pytest.mark.parametrize('loss, penalty',
+                             itertools.product(['squared_loss', 'huber',
+                                                'epsilon_insensitive',
+                                                'squared_epsilon_insensitive'],
+                                               ['l1', 'l2', 'elasticnet']))
+    def test_linear_model_sgdregressor(loss, penalty):
+        from sklearn.linear_model import SGDClassifier
+    
+        X, y = init_arrays()
+    
+        cl = SGDClassifier(penalty=penalty, loss=loss)
+>       cl.fit(X, y)
+
+test_64bit_csr_indices.py:101: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:539: in fit
+    sample_weight=sample_weight)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:409: in _fit
+    classes, sample_weight, coef_init, intercept_init)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:367: in _partial_fit
+    sample_weight=sample_weight, n_iter=n_iter)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:451: in _fit_multiclass
+    for i in range(len(self.classes_)))
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:779: in __call__
+    while self.dispatch_one_batch(iterator):
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:625: in dispatch_one_batch
+    self._dispatch(tasks)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:588: in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/_parallel_backends.py:111: in apply_async
+    result = ImmediateResult(func)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/_parallel_backends.py:332: in __init__
+    self.results = batch()
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:131: in __call__
+    return [func(*args, **kwargs) for func, args, kwargs in self.items]
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:131: in <listcomp>
+    return [func(*args, **kwargs) for func, args, kwargs in self.items]
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:249: in fit_binary
+    dataset, intercept_decay = make_dataset(X, y_i, sample_weight)
+/home/rth/src/scikit-learn/sklearn/linear_model/base.py:61: in make_dataset
+    seed=seed)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+>   ???
+E   ValueError: Buffer dtype mismatch, expected 'int' but got 'long'
+
+sklearn/utils/seq_dataset.pyx:223: ValueError
+________ test_linear_model_sgdregressor[squared_epsilon_insensitive-l2] ________
+[gw1] linux -- Python 3.6.1 /home/rth/.miniconda3/envs/sklearn-env/bin/python
+loss = 'squared_epsilon_insensitive', penalty = 'l2'
+
+    @pytest.mark.parametrize('loss, penalty',
+                             itertools.product(['squared_loss', 'huber',
+                                                'epsilon_insensitive',
+                                                'squared_epsilon_insensitive'],
+                                               ['l1', 'l2', 'elasticnet']))
+    def test_linear_model_sgdregressor(loss, penalty):
+        from sklearn.linear_model import SGDClassifier
+    
+        X, y = init_arrays()
+    
+        cl = SGDClassifier(penalty=penalty, loss=loss)
+>       cl.fit(X, y)
+
+test_64bit_csr_indices.py:101: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:539: in fit
+    sample_weight=sample_weight)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:409: in _fit
+    classes, sample_weight, coef_init, intercept_init)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:367: in _partial_fit
+    sample_weight=sample_weight, n_iter=n_iter)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:451: in _fit_multiclass
+    for i in range(len(self.classes_)))
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:779: in __call__
+    while self.dispatch_one_batch(iterator):
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:625: in dispatch_one_batch
+    self._dispatch(tasks)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:588: in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/_parallel_backends.py:111: in apply_async
+    result = ImmediateResult(func)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/_parallel_backends.py:332: in __init__
+    self.results = batch()
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:131: in __call__
+    return [func(*args, **kwargs) for func, args, kwargs in self.items]
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:131: in <listcomp>
+    return [func(*args, **kwargs) for func, args, kwargs in self.items]
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:249: in fit_binary
+    dataset, intercept_decay = make_dataset(X, y_i, sample_weight)
+/home/rth/src/scikit-learn/sklearn/linear_model/base.py:61: in make_dataset
+    seed=seed)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+>   ???
+E   ValueError: Buffer dtype mismatch, expected 'int' but got 'long'
+
+sklearn/utils/seq_dataset.pyx:223: ValueError
+____ test_linear_model_sgdregressor[squared_epsilon_insensitive-elasticnet] ____
+[gw1] linux -- Python 3.6.1 /home/rth/.miniconda3/envs/sklearn-env/bin/python
+loss = 'squared_epsilon_insensitive', penalty = 'elasticnet'
+
+    @pytest.mark.parametrize('loss, penalty',
+                             itertools.product(['squared_loss', 'huber',
+                                                'epsilon_insensitive',
+                                                'squared_epsilon_insensitive'],
+                                               ['l1', 'l2', 'elasticnet']))
+    def test_linear_model_sgdregressor(loss, penalty):
+        from sklearn.linear_model import SGDClassifier
+    
+        X, y = init_arrays()
+    
+        cl = SGDClassifier(penalty=penalty, loss=loss)
+>       cl.fit(X, y)
+
+test_64bit_csr_indices.py:101: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:539: in fit
+    sample_weight=sample_weight)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:409: in _fit
+    classes, sample_weight, coef_init, intercept_init)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:367: in _partial_fit
+    sample_weight=sample_weight, n_iter=n_iter)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:451: in _fit_multiclass
+    for i in range(len(self.classes_)))
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:779: in __call__
+    while self.dispatch_one_batch(iterator):
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:625: in dispatch_one_batch
+    self._dispatch(tasks)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:588: in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/_parallel_backends.py:111: in apply_async
+    result = ImmediateResult(func)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/_parallel_backends.py:332: in __init__
+    self.results = batch()
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:131: in __call__
+    return [func(*args, **kwargs) for func, args, kwargs in self.items]
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:131: in <listcomp>
+    return [func(*args, **kwargs) for func, args, kwargs in self.items]
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:249: in fit_binary
+    dataset, intercept_decay = make_dataset(X, y_i, sample_weight)
+/home/rth/src/scikit-learn/sklearn/linear_model/base.py:61: in make_dataset
+    seed=seed)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+>   ???
+E   ValueError: Buffer dtype mismatch, expected 'int' but got 'long'
+
+sklearn/utils/seq_dataset.pyx:223: ValueError
+__________________________ test_64bit_csr_indices.py ___________________________
+[gw1] linux -- Python 3.6.1 /home/rth/.miniconda3/envs/sklearn-env/bin/python
+Slave 'gw1' crashed while running 'test_64bit_csr_indices.py::test_linear_model_estimator[svm.LinearSVC]'
+__________________________ test_64bit_csr_indices.py ___________________________
+[gw2] linux -- Python 3.6.1 /home/rth/.miniconda3/envs/sklearn-env/bin/python
+Slave 'gw2' crashed while running 'test_64bit_csr_indices.py::test_linear_model_logisticregression[liblinear-l2]'
+___________________ test_linear_model_sgdclassifier[log-l1] ____________________
+[gw3] linux -- Python 3.6.1 /home/rth/.miniconda3/envs/sklearn-env/bin/python
+loss = 'log', penalty = 'l1'
+
+    @pytest.mark.parametrize('loss, penalty',
+                             itertools.product(['hinge', 'log', 'modified_huber',
+                                                'squared_hinge', 'perceptron'],
+                                               ['l1', 'l2', 'elasticnet']))
+    def test_linear_model_sgdclassifier(loss, penalty):
+        from sklearn.linear_model import SGDClassifier
+    
+        X, y = init_arrays()
+    
+        cl = SGDClassifier(penalty=penalty, loss=loss)
+>       cl.fit(X, y)
+
+test_64bit_csr_indices.py:85: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:539: in fit
+    sample_weight=sample_weight)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:409: in _fit
+    classes, sample_weight, coef_init, intercept_init)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:367: in _partial_fit
+    sample_weight=sample_weight, n_iter=n_iter)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:451: in _fit_multiclass
+    for i in range(len(self.classes_)))
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:779: in __call__
+    while self.dispatch_one_batch(iterator):
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:625: in dispatch_one_batch
+    self._dispatch(tasks)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:588: in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/_parallel_backends.py:111: in apply_async
+    result = ImmediateResult(func)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/_parallel_backends.py:332: in __init__
+    self.results = batch()
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:131: in __call__
+    return [func(*args, **kwargs) for func, args, kwargs in self.items]
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:131: in <listcomp>
+    return [func(*args, **kwargs) for func, args, kwargs in self.items]
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:249: in fit_binary
+    dataset, intercept_decay = make_dataset(X, y_i, sample_weight)
+/home/rth/src/scikit-learn/sklearn/linear_model/base.py:61: in make_dataset
+    seed=seed)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+>   ???
+E   ValueError: Buffer dtype mismatch, expected 'int' but got 'long'
+
+sklearn/utils/seq_dataset.pyx:223: ValueError
+___________________ test_linear_model_sgdclassifier[log-l2] ____________________
+[gw3] linux -- Python 3.6.1 /home/rth/.miniconda3/envs/sklearn-env/bin/python
+loss = 'log', penalty = 'l2'
+
+    @pytest.mark.parametrize('loss, penalty',
+                             itertools.product(['hinge', 'log', 'modified_huber',
+                                                'squared_hinge', 'perceptron'],
+                                               ['l1', 'l2', 'elasticnet']))
+    def test_linear_model_sgdclassifier(loss, penalty):
+        from sklearn.linear_model import SGDClassifier
+    
+        X, y = init_arrays()
+    
+        cl = SGDClassifier(penalty=penalty, loss=loss)
+>       cl.fit(X, y)
+
+test_64bit_csr_indices.py:85: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:539: in fit
+    sample_weight=sample_weight)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:409: in _fit
+    classes, sample_weight, coef_init, intercept_init)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:367: in _partial_fit
+    sample_weight=sample_weight, n_iter=n_iter)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:451: in _fit_multiclass
+    for i in range(len(self.classes_)))
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:779: in __call__
+    while self.dispatch_one_batch(iterator):
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:625: in dispatch_one_batch
+    self._dispatch(tasks)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:588: in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/_parallel_backends.py:111: in apply_async
+    result = ImmediateResult(func)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/_parallel_backends.py:332: in __init__
+    self.results = batch()
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:131: in __call__
+    return [func(*args, **kwargs) for func, args, kwargs in self.items]
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:131: in <listcomp>
+    return [func(*args, **kwargs) for func, args, kwargs in self.items]
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:249: in fit_binary
+    dataset, intercept_decay = make_dataset(X, y_i, sample_weight)
+/home/rth/src/scikit-learn/sklearn/linear_model/base.py:61: in make_dataset
+    seed=seed)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+>   ???
+E   ValueError: Buffer dtype mismatch, expected 'int' but got 'long'
+
+sklearn/utils/seq_dataset.pyx:223: ValueError
+_______________ test_linear_model_sgdclassifier[log-elasticnet] ________________
+[gw3] linux -- Python 3.6.1 /home/rth/.miniconda3/envs/sklearn-env/bin/python
+loss = 'log', penalty = 'elasticnet'
+
+    @pytest.mark.parametrize('loss, penalty',
+                             itertools.product(['hinge', 'log', 'modified_huber',
+                                                'squared_hinge', 'perceptron'],
+                                               ['l1', 'l2', 'elasticnet']))
+    def test_linear_model_sgdclassifier(loss, penalty):
+        from sklearn.linear_model import SGDClassifier
+    
+        X, y = init_arrays()
+    
+        cl = SGDClassifier(penalty=penalty, loss=loss)
+>       cl.fit(X, y)
+
+test_64bit_csr_indices.py:85: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:539: in fit
+    sample_weight=sample_weight)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:409: in _fit
+    classes, sample_weight, coef_init, intercept_init)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:367: in _partial_fit
+    sample_weight=sample_weight, n_iter=n_iter)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:451: in _fit_multiclass
+    for i in range(len(self.classes_)))
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:779: in __call__
+    while self.dispatch_one_batch(iterator):
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:625: in dispatch_one_batch
+    self._dispatch(tasks)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:588: in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/_parallel_backends.py:111: in apply_async
+    result = ImmediateResult(func)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/_parallel_backends.py:332: in __init__
+    self.results = batch()
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:131: in __call__
+    return [func(*args, **kwargs) for func, args, kwargs in self.items]
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:131: in <listcomp>
+    return [func(*args, **kwargs) for func, args, kwargs in self.items]
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:249: in fit_binary
+    dataset, intercept_decay = make_dataset(X, y_i, sample_weight)
+/home/rth/src/scikit-learn/sklearn/linear_model/base.py:61: in make_dataset
+    seed=seed)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+>   ???
+E   ValueError: Buffer dtype mismatch, expected 'int' but got 'long'
+
+sklearn/utils/seq_dataset.pyx:223: ValueError
+______________ test_linear_model_sgdclassifier[modified_huber-l1] ______________
+[gw3] linux -- Python 3.6.1 /home/rth/.miniconda3/envs/sklearn-env/bin/python
+loss = 'modified_huber', penalty = 'l1'
+
+    @pytest.mark.parametrize('loss, penalty',
+                             itertools.product(['hinge', 'log', 'modified_huber',
+                                                'squared_hinge', 'perceptron'],
+                                               ['l1', 'l2', 'elasticnet']))
+    def test_linear_model_sgdclassifier(loss, penalty):
+        from sklearn.linear_model import SGDClassifier
+    
+        X, y = init_arrays()
+    
+        cl = SGDClassifier(penalty=penalty, loss=loss)
+>       cl.fit(X, y)
+
+test_64bit_csr_indices.py:85: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:539: in fit
+    sample_weight=sample_weight)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:409: in _fit
+    classes, sample_weight, coef_init, intercept_init)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:367: in _partial_fit
+    sample_weight=sample_weight, n_iter=n_iter)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:451: in _fit_multiclass
+    for i in range(len(self.classes_)))
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:779: in __call__
+    while self.dispatch_one_batch(iterator):
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:625: in dispatch_one_batch
+    self._dispatch(tasks)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:588: in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/_parallel_backends.py:111: in apply_async
+    result = ImmediateResult(func)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/_parallel_backends.py:332: in __init__
+    self.results = batch()
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:131: in __call__
+    return [func(*args, **kwargs) for func, args, kwargs in self.items]
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:131: in <listcomp>
+    return [func(*args, **kwargs) for func, args, kwargs in self.items]
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:249: in fit_binary
+    dataset, intercept_decay = make_dataset(X, y_i, sample_weight)
+/home/rth/src/scikit-learn/sklearn/linear_model/base.py:61: in make_dataset
+    seed=seed)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+>   ???
+E   ValueError: Buffer dtype mismatch, expected 'int' but got 'long'
+
+sklearn/utils/seq_dataset.pyx:223: ValueError
+______________ test_linear_model_sgdclassifier[modified_huber-l2] ______________
+[gw3] linux -- Python 3.6.1 /home/rth/.miniconda3/envs/sklearn-env/bin/python
+loss = 'modified_huber', penalty = 'l2'
+
+    @pytest.mark.parametrize('loss, penalty',
+                             itertools.product(['hinge', 'log', 'modified_huber',
+                                                'squared_hinge', 'perceptron'],
+                                               ['l1', 'l2', 'elasticnet']))
+    def test_linear_model_sgdclassifier(loss, penalty):
+        from sklearn.linear_model import SGDClassifier
+    
+        X, y = init_arrays()
+    
+        cl = SGDClassifier(penalty=penalty, loss=loss)
+>       cl.fit(X, y)
+
+test_64bit_csr_indices.py:85: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:539: in fit
+    sample_weight=sample_weight)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:409: in _fit
+    classes, sample_weight, coef_init, intercept_init)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:367: in _partial_fit
+    sample_weight=sample_weight, n_iter=n_iter)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:451: in _fit_multiclass
+    for i in range(len(self.classes_)))
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:779: in __call__
+    while self.dispatch_one_batch(iterator):
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:625: in dispatch_one_batch
+    self._dispatch(tasks)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:588: in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/_parallel_backends.py:111: in apply_async
+    result = ImmediateResult(func)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/_parallel_backends.py:332: in __init__
+    self.results = batch()
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:131: in __call__
+    return [func(*args, **kwargs) for func, args, kwargs in self.items]
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:131: in <listcomp>
+    return [func(*args, **kwargs) for func, args, kwargs in self.items]
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:249: in fit_binary
+    dataset, intercept_decay = make_dataset(X, y_i, sample_weight)
+/home/rth/src/scikit-learn/sklearn/linear_model/base.py:61: in make_dataset
+    seed=seed)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+>   ???
+E   ValueError: Buffer dtype mismatch, expected 'int' but got 'long'
+
+sklearn/utils/seq_dataset.pyx:223: ValueError
+_____________________ test_linear_model_estimator[svm.SVC] _____________________
+[gw3] linux -- Python 3.6.1 /home/rth/.miniconda3/envs/sklearn-env/bin/python
+estimator_name = 'svm.SVC'
+
+    @pytest.mark.parametrize('estimator_name', ['linear_model.LinearRegression',
+                                                'linear_model.ElasticNet',
+                                                'svm.LinearSVC',
+                                                'svm.SVC',
+                                                'tree.DecisionTreeClassifier'])
+    def test_linear_model_estimator(estimator_name):
+        import sklearn.tree
+        import sklearn.svm
+        import sklearn.linear_model
+    
+        Estimator = eval('sklearn.' + estimator_name)
+    
+        X, y = init_arrays()
+    
+        cl = Estimator()
+>       cl.fit(X, y)
+
+test_64bit_csr_indices.py:121: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/home/rth/src/scikit-learn/sklearn/svm/base.py:187: in fit
+    fit(X, y, sample_weight, solver_type, kernel, random_seed=seed)
+/home/rth/src/scikit-learn/sklearn/svm/base.py:276: in _sparse_fit
+    random_seed)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+>   ???
+E   ValueError: Buffer dtype mismatch, expected 'int32_t' but got 'long'
+
+sklearn/svm/libsvm_sparse.pyx:70: ValueError
+_________________ test_linear_model_logisticregression[sag-l2] _________________
+[gw3] linux -- Python 3.6.1 /home/rth/.miniconda3/envs/sklearn-env/bin/python
+solver = 'sag', penalty = 'l2'
+
+    @pytest.mark.parametrize('solver, penalty',
+                             [('liblinear', 'l1'),
+                              ('liblinear', 'l2'),
+                              ('newton-cg', 'l2'),
+                              ('lbfgs', 'l2'),
+                              ('sag', 'l2')])
+    def test_linear_model_logisticregression(solver, penalty):
+        from sklearn.linear_model import LogisticRegression
+    
+        X, y = init_arrays()
+    
+        cl = LogisticRegression(penalty=penalty, solver=solver)
+>       cl.fit(X, y)
+
+test_64bit_csr_indices.py:70: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/home/rth/src/scikit-learn/sklearn/linear_model/logistic.py:1285: in fit
+    for class_, warm_start_coef_ in zip(classes_, warm_start_coef))
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:779: in __call__
+    while self.dispatch_one_batch(iterator):
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:625: in dispatch_one_batch
+    self._dispatch(tasks)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:588: in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/_parallel_backends.py:111: in apply_async
+    result = ImmediateResult(func)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/_parallel_backends.py:332: in __init__
+    self.results = batch()
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:131: in __call__
+    return [func(*args, **kwargs) for func, args, kwargs in self.items]
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:131: in <listcomp>
+    return [func(*args, **kwargs) for func, args, kwargs in self.items]
+/home/rth/src/scikit-learn/sklearn/linear_model/logistic.py:753: in logistic_regression_path
+    is_saga=(solver == 'saga'))
+/home/rth/src/scikit-learn/sklearn/linear_model/sag.py:297: in sag_solver
+    dataset, intercept_decay = make_dataset(X, y, sample_weight, random_state)
+/home/rth/src/scikit-learn/sklearn/linear_model/base.py:61: in make_dataset
+    seed=seed)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+>   ???
+E   ValueError: Buffer dtype mismatch, expected 'int' but got 'long'
+
+sklearn/utils/seq_dataset.pyx:223: ValueError
+__________________ test_linear_model_sgdclassifier[hinge-l1] ___________________
+[gw3] linux -- Python 3.6.1 /home/rth/.miniconda3/envs/sklearn-env/bin/python
+loss = 'hinge', penalty = 'l1'
+
+    @pytest.mark.parametrize('loss, penalty',
+                             itertools.product(['hinge', 'log', 'modified_huber',
+                                                'squared_hinge', 'perceptron'],
+                                               ['l1', 'l2', 'elasticnet']))
+    def test_linear_model_sgdclassifier(loss, penalty):
+        from sklearn.linear_model import SGDClassifier
+    
+        X, y = init_arrays()
+    
+        cl = SGDClassifier(penalty=penalty, loss=loss)
+>       cl.fit(X, y)
+
+test_64bit_csr_indices.py:85: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:539: in fit
+    sample_weight=sample_weight)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:409: in _fit
+    classes, sample_weight, coef_init, intercept_init)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:367: in _partial_fit
+    sample_weight=sample_weight, n_iter=n_iter)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:451: in _fit_multiclass
+    for i in range(len(self.classes_)))
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:779: in __call__
+    while self.dispatch_one_batch(iterator):
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:625: in dispatch_one_batch
+    self._dispatch(tasks)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:588: in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/_parallel_backends.py:111: in apply_async
+    result = ImmediateResult(func)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/_parallel_backends.py:332: in __init__
+    self.results = batch()
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:131: in __call__
+    return [func(*args, **kwargs) for func, args, kwargs in self.items]
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:131: in <listcomp>
+    return [func(*args, **kwargs) for func, args, kwargs in self.items]
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:249: in fit_binary
+    dataset, intercept_decay = make_dataset(X, y_i, sample_weight)
+/home/rth/src/scikit-learn/sklearn/linear_model/base.py:61: in make_dataset
+    seed=seed)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+>   ???
+E   ValueError: Buffer dtype mismatch, expected 'int' but got 'long'
+
+sklearn/utils/seq_dataset.pyx:223: ValueError
+__________________ test_linear_model_sgdclassifier[hinge-l2] ___________________
+[gw3] linux -- Python 3.6.1 /home/rth/.miniconda3/envs/sklearn-env/bin/python
+loss = 'hinge', penalty = 'l2'
+
+    @pytest.mark.parametrize('loss, penalty',
+                             itertools.product(['hinge', 'log', 'modified_huber',
+                                                'squared_hinge', 'perceptron'],
+                                               ['l1', 'l2', 'elasticnet']))
+    def test_linear_model_sgdclassifier(loss, penalty):
+        from sklearn.linear_model import SGDClassifier
+    
+        X, y = init_arrays()
+    
+        cl = SGDClassifier(penalty=penalty, loss=loss)
+>       cl.fit(X, y)
+
+test_64bit_csr_indices.py:85: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:539: in fit
+    sample_weight=sample_weight)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:409: in _fit
+    classes, sample_weight, coef_init, intercept_init)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:367: in _partial_fit
+    sample_weight=sample_weight, n_iter=n_iter)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:451: in _fit_multiclass
+    for i in range(len(self.classes_)))
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:779: in __call__
+    while self.dispatch_one_batch(iterator):
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:625: in dispatch_one_batch
+    self._dispatch(tasks)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:588: in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/_parallel_backends.py:111: in apply_async
+    result = ImmediateResult(func)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/_parallel_backends.py:332: in __init__
+    self.results = batch()
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:131: in __call__
+    return [func(*args, **kwargs) for func, args, kwargs in self.items]
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:131: in <listcomp>
+    return [func(*args, **kwargs) for func, args, kwargs in self.items]
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:249: in fit_binary
+    dataset, intercept_decay = make_dataset(X, y_i, sample_weight)
+/home/rth/src/scikit-learn/sklearn/linear_model/base.py:61: in make_dataset
+    seed=seed)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+>   ???
+E   ValueError: Buffer dtype mismatch, expected 'int' but got 'long'
+
+sklearn/utils/seq_dataset.pyx:223: ValueError
+______________ test_linear_model_sgdclassifier[hinge-elasticnet] _______________
+[gw3] linux -- Python 3.6.1 /home/rth/.miniconda3/envs/sklearn-env/bin/python
+loss = 'hinge', penalty = 'elasticnet'
+
+    @pytest.mark.parametrize('loss, penalty',
+                             itertools.product(['hinge', 'log', 'modified_huber',
+                                                'squared_hinge', 'perceptron'],
+                                               ['l1', 'l2', 'elasticnet']))
+    def test_linear_model_sgdclassifier(loss, penalty):
+        from sklearn.linear_model import SGDClassifier
+    
+        X, y = init_arrays()
+    
+        cl = SGDClassifier(penalty=penalty, loss=loss)
+>       cl.fit(X, y)
+
+test_64bit_csr_indices.py:85: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:539: in fit
+    sample_weight=sample_weight)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:409: in _fit
+    classes, sample_weight, coef_init, intercept_init)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:367: in _partial_fit
+    sample_weight=sample_weight, n_iter=n_iter)
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:451: in _fit_multiclass
+    for i in range(len(self.classes_)))
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:779: in __call__
+    while self.dispatch_one_batch(iterator):
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:625: in dispatch_one_batch
+    self._dispatch(tasks)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:588: in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/_parallel_backends.py:111: in apply_async
+    result = ImmediateResult(func)
+/home/rth/src/scikit-learn/sklearn/externals/joblib/_parallel_backends.py:332: in __init__
+    self.results = batch()
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:131: in __call__
+    return [func(*args, **kwargs) for func, args, kwargs in self.items]
+/home/rth/src/scikit-learn/sklearn/externals/joblib/parallel.py:131: in <listcomp>
+    return [func(*args, **kwargs) for func, args, kwargs in self.items]
+/home/rth/src/scikit-learn/sklearn/linear_model/stochastic_gradient.py:249: in fit_binary
+    dataset, intercept_decay = make_dataset(X, y_i, sample_weight)
+/home/rth/src/scikit-learn/sklearn/linear_model/base.py:61: in make_dataset
+    seed=seed)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+>   ???
+E   ValueError: Buffer dtype mismatch, expected 'int' but got 'long'
+
+sklearn/utils/seq_dataset.pyx:223: ValueError
+==================== 34 failed, 11 passed in 52.64 seconds =====================
