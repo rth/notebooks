@@ -1,3 +1,4 @@
+$ py.test -sv -n 1 test_64bit_csr_indices.py
 ============================= test session starts ==============================
 platform linux -- Python 3.6.1, pytest-3.0.7, py-1.4.33, pluggy-0.4.0 -- /home/rth/.miniconda3/envs/sklearn-env/bin/python
 cachedir: .cache

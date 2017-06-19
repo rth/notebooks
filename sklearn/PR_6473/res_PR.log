@@ -38,3 +38,41 @@ real	0m6.406s
 user	0m6.303s
 sys	0m0.100s
 + python run_vectorizers_32bit.py CountVectorizer 32769
+Vectorizer: CountVectorizer
+  pars:  {}
+n_samples = 32769
+
+# Resulting array (X):
+ * indptr len=32770 dtype=int64
+ * indices len=2147581953 dtype=int64
+ * data len=2147581953 dtype=int64
+
+real	33m30.528s
+user	31m21.656s
+sys	2m2.950s
++ python run_vectorizers_32bit.py TfidfVectorizer 32769
+Vectorizer: TfidfVectorizer
+  pars:  {'norm': None}
+n_samples = 32769
+
+# Resulting array (X):
+ * indptr len=32770 dtype=int64
+ * indices len=2147581953 dtype=int64
+ * data len=2147581953 dtype=float64
+
+real	34m38.949s
+user	32m20.345s
+sys	2m12.391s
++ python run_vectorizers_32bit.py HashingVectorizer 32769
+Vectorizer: HashingVectorizer
+  pars:  {'norm': None}
+n_samples = 32769
+
+# Resulting array (X):
+ * indptr len=32770 dtype=int64
+ * indices len=2081749032 dtype=int64
+ * data len=2081749032 dtype=float64
+
+real	32m1.660s
+user	31m36.058s
+sys	0m25.000s
