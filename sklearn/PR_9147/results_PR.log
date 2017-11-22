@@ -1,0 +1,48 @@
+Vectorizer: CountVectorizer
+  pars:  {}
+n_samples = 100
+
+# Resulting array (X):
+ * indptr len=101 dtype=int32
+ * indices len=6553700 dtype=int32
+ * data len=6553700 dtype=int64
+Vectorizer: TfidfVectorizer
+  pars:  {}
+n_samples = 100
+
+# Resulting array (X):
+ * indptr len=101 dtype=int32
+ * indices len=6553700 dtype=int32
+ * data len=6553700 dtype=float64
+Vectorizer: HashingVectorizer
+  pars:  {}
+n_samples = 100
+
+# Resulting array (X):
+ * indptr len=101 dtype=int32
+ * indices len=6352800 dtype=int32
+ * data len=6352800 dtype=float64
+Vectorizer: CountVectorizer
+  pars:  {}
+n_samples = 32769
+
+# Resulting array (X):
+ * indptr len=32770 dtype=int64
+ * indices len=2147581953 dtype=int64
+ * data len=2147581953 dtype=int64
+Vectorizer: TfidfVectorizer
+  pars:  {}
+n_samples = 32769
+
+# Resulting array (X):
+ * indptr len=32770 dtype=int64
+ * indices len=2147581953 dtype=int64
+ * data len=2147581953 dtype=float64
+Vectorizer: HashingVectorizer
+  pars:  {}
+n_samples = 32769
+
+# Resulting array (X):
+ * indptr len=32770 dtype=int64
+ * indices len=2081749032 dtype=int64
+ * data len=2081749032 dtype=float64

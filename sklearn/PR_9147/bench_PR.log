@@ -1,0 +1,28 @@
+================================================================================
+#    Text vectorizers benchmark
+================================================================================
+
+Using a subset of the 20 newsrgoups dataset (11314 documents).
+This benchmarks runs in ~20 min ...
+
+========== Run time performance (sec) ===========
+
+Computing the mean and the standard deviation of the run time over 3 runs...
+
+vectorizer           CountVectorizer HashingVectorizer TfidfVectorizer
+analyzer ngram_range                                                  
+char     (4, 4)       16.32 (+-0.19)    11.81 (+-0.01)  17.26 (+-0.25)
+char_wb  (4, 4)       13.41 (+-0.06)    10.74 (+-0.07)  13.85 (+-0.05)
+word     (1, 1)        2.89 (+-0.01)     2.42 (+-0.02)   2.85 (+-0.01)
+         (1, 2)       10.33 (+-0.06)     4.65 (+-0.04)  10.58 (+-0.14)
+         (1, 4)       38.37 (+-0.33)     9.32 (+-0.01)  38.92 (+-0.42)
+
+=============== Memory usage (MB) ===============
+
+vectorizer           CountVectorizer HashingVectorizer TfidfVectorizer
+analyzer ngram_range                                                  
+char     (4, 4)                789.0             519.4           789.4
+char_wb  (4, 4)                583.4             367.1           583.5
+word     (1, 1)                186.3             184.0           230.1
+         (1, 2)                846.6             228.4           846.8
+         (1, 4)               3299.0             361.4          3299.2

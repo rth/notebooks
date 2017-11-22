@@ -1,0 +1,67 @@
+Vectorizer: CountVectorizer
+  pars:  {}
+n_samples = 100
+
+# Resulting array (X):
+ * indptr len=101 dtype=int32
+ * indices len=6553700 dtype=int32
+ * data len=6553700 dtype=int64
+Vectorizer: TfidfVectorizer
+  pars:  {}
+n_samples = 100
+
+# Resulting array (X):
+ * indptr len=101 dtype=int32
+ * indices len=6553700 dtype=int32
+ * data len=6553700 dtype=float64
+Vectorizer: HashingVectorizer
+  pars:  {}
+n_samples = 100
+
+# Resulting array (X):
+ * indptr len=101 dtype=int32
+ * indices len=6352800 dtype=int32
+ * data len=6352800 dtype=float64
+Vectorizer: CountVectorizer
+  pars:  {}
+n_samples = 32769
+Traceback (most recent call last):
+  File "run_vectorizers_32bit.py", line 31, in <module>
+    X = vect.fit_transform(doc())
+  File "/home/ubuntu/scikit-learn/sklearn/feature_extraction/text.py", line 869, in fit_transform
+    self.fixed_vocabulary_)
+  File "/home/ubuntu/scikit-learn/sklearn/feature_extraction/text.py", line 805, in _count_vocab
+    indptr.append(len(j_indices))
+OverflowError: signed integer is greater than maximum
+
+Vectorizer: TfidfVectorizer
+  pars:  {}
+n_samples = 32769
+Traceback (most recent call last):
+  File "run_vectorizers_32bit.py", line 31, in <module>
+    X = vect.fit_transform(doc())
+  File "/home/ubuntu/scikit-learn/sklearn/feature_extraction/text.py", line 1381, in fit_transform
+    X = super(TfidfVectorizer, self).fit_transform(raw_documents)
+  File "/home/ubuntu/scikit-learn/sklearn/feature_extraction/text.py", line 869, in fit_transform
+    self.fixed_vocabulary_)
+  File "/home/ubuntu/scikit-learn/sklearn/feature_extraction/text.py", line 805, in _count_vocab
+    indptr.append(len(j_indices))
+OverflowError: signed integer is greater than maximum
+
+Vectorizer: HashingVectorizer
+  pars:  {}
+n_samples = 32769
+Traceback (most recent call last):
+  File "run_vectorizers_32bit.py", line 31, in <module>
+    X = vect.fit_transform(doc())
+  File "/home/ubuntu/scikit-learn/sklearn/base.py", line 503, in fit_transform
+    return self.fit(X, **fit_params).transform(X)
+  File "/home/ubuntu/scikit-learn/sklearn/feature_extraction/text.py", line 519, in transform
+    X = self._get_hasher().transform(analyzer(doc) for doc in X)
+  File "/home/ubuntu/scikit-learn/sklearn/feature_extraction/hashing.py", line 167, in transform
+    shape=(n_samples, self.n_features))
+  File "/home/ubuntu/miniconda3/envs/sklearn-env/lib/python3.6/site-packages/scipy/sparse/compressed.py", line 98, in __init__
+    self.check_format(full_check=False)
+  File "/home/ubuntu/miniconda3/envs/sklearn-env/lib/python3.6/site-packages/scipy/sparse/compressed.py", line 167, in check_format
+    raise ValueError("indices and data should have the same size")
+ValueError: indices and data should have the same size
