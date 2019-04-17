@@ -10,6 +10,7 @@ echo 'export PATH=~/miniconda3/bin:$PATH' >> ~/.bashrc
 source ~/.bashrc
 
 wget https://raw.githubusercontent.com/rth/notebooks/master/setup/.screenrc -O ~/.screenrc
+wget https://raw.githubusercontent.com/rth/notebooks/master/setup/.gitconfig -O ~/.gitconfig
 
 git config --global user.name "Roman Yurchak"
 git config --global user.email "rth.yurchak@gmail.com"
