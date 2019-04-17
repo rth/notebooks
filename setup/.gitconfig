@@ -2,6 +2,8 @@
         name = Roman Yurchak
 [push]
         default = simple
+[core]
+        editor = vim
 [color]
         diff = auto
         status = auto
